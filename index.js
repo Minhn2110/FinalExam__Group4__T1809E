@@ -21,7 +21,6 @@ app.get("/about", function(request, response) {
 	response.render("about");
 });
 
-
 app.get("/contact", function(request, response) {
 	response.render("contact");
 });
