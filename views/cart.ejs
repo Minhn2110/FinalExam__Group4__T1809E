@@ -1,17 +1,210 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>aaaa</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/page-cart.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<% include common/head %>
 </head>
-<body>
-	<% include common/header %>
 
-	<div class="container-fluid">
-		<p>HOme</p>
+<body>
+	<div id="page">
+		<% include common/header %>
+		<!-- <div class="page-heading col-md-12">
+			<div class="page-title">
+				<h2>Cart</h2>
+			</div>
+		</div>
+		<div class="main-container col-md-12">
+			<div class="cart">
+				<div class="container">
+					<p class="cart-empty">Your cart is currently empty.
+					</p>
+					<p>
+						<a class="btn-home" href="/home">Return to shop
+						</a>
+					</p>
+				</div>
+			</div>
+		</div> -->
+		<div class="main-container">
+			<div class="main">
+				<div class="container container-cart">
+
+					<table class="table table-light table-cart">
+						<thead>
+							<tr>
+								<th class="product-thumbnail">&nbsp;</th>
+								<th class="product-name">Product</th>
+								<th class="product-price">Price</th>
+								<th class="product-quantity">Quantity</th>
+								<th class="product-subtotal">Total</th>
+								<th class="product-remove">&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="product">
+								<td class="cart-thumbnail">
+									<a href="#">
+										<img src="http://klbtheme.com/qualis/wp-content/uploads/2018/12/p16-80x80.jpg"
+											alt="">
+									</a>
+								</td>
+								<td class="product-name">
+									<a href="#">Fresh Red Seedless</a>
+								</td>
+								<td class="product-price" data-title="Price">
+									<span class="Price-amount ">
+										<span class="Price-currencySymbol">
+											£
+										</span>
+										6.99
+									</span>
+								</td>
+								<td class="product-quantity">
+									<input type="button" value="-" class="reduction">
+									<input type="text" value="1" class="current-price">
+									<input type="button" value="+" class="increase">
+								</td>
+								<td class="product-total">
+									<span class="Price-amount-pd ">
+										<span class="Price-currencySymbol-pd">
+											£
+										</span>
+										6.99
+									</span>
+								</td>
+								<td class="product-remove">
+									<a href="#"><i class="far fa-trash-alt"></i></a>
+								</td>
+							</tr>
+							<tr class="product">
+								<td class="cart-thumbnail">
+									<a href="#">
+										<img src="http://klbtheme.com/qualis/wp-content/uploads/2018/12/p16-80x80.jpg"
+											alt="">
+									</a>
+								</td>
+								<td class="product-name">
+									<a href="#">Fresh Red Seedless</a>
+								</td>
+								<td class="product-price" data-title="Price">
+									<span class="Price-amount ">
+										<span class="Price-currencySymbol">
+											£
+										</span>
+										6.99
+									</span>
+								</td>
+								<td class="product-quantity">
+									<input type="button" value="-" class="reduction">
+									<input type="text" value="1" class="current-price">
+									<input type="button" value="+" class="increase">
+								</td>
+								<td class="product-total">
+									<span class="Price-amount-pd ">
+										<span class="Price-currencySymbol-pd">
+											£
+										</span>
+										6.99
+									</span>
+								</td>
+								<td class="product-remove">
+									<a href="#"><i class="far fa-trash-alt"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="6" class="actions">
+									<div class="row">
+										<div class="coupon col-8 col-md-8">
+											<input type="text" name="coupon_code" class="input-text" id="coupon_code"
+												value="" placeholder="Coupon code">
+											<button type="submit" class="button" name="apply_coupon"
+												value="Apply coupon">
+												Apply coupon
+											</button>
+										</div>
+										<button type="submit" class="button col-2 col-md-2 update-cart"
+											name="update_cart" value="Update cart">
+											Update cart
+										</button>
+									</div>
+
+								</td>
+							</tr>
+							<tr>
+								<td colspan="6">
+									<div class="cart_total ">
+										<h2>Cart totals</h2>
+										<table cellspacing="0" class="table-total table-light table col-md-12 col-12">
+										<tbody>
+										<tr class="cart-subtotal">
+										<th>Subtotal</th>
+										<td data-title="Subtotal"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>14.99</span></td>
+										</tr>
+										<tr class="order-total">
+										<th>Total</th>
+										<td data-title="Total"><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>14.99</span></strong> </td>
+										</tr>
+										</tbody></table>
+										<div class="wc-proceed-to-checkout">
+										<button class="button checkout-button"><a href="#" ></a>
+												Proceed to checkout</a>
+										</button>
+										
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>					
+				</div>
+			</div>
+		</div>
+		<div class="main-container ">
+			<div class="container our-features-box">
+				<ul>
+					<li>
+						<div class="feature-box klb-footer-box">
+							<i class="fa fa-truck-moving"></i>
+							<div class="content">FREE SHIPPING on order <br> over $99</div>
+						</div>
+					</li>
+					<li>
+						<div class="feature-box klb-footer-box">
+							<i class="fa fa-phone"></i>
+							<div class="content">HAVE A QUESTIONS? <br> +10800 789 0000</div>
+						</div>
+					</li>
+					<li>
+						<div class="feature-box klb-footer-box">
+							<i class="fa fa-dollar-sign"></i>
+							<div class="content">100% MONEY BACK <br> GUARANTEE</div>
+						</div>
+					</li>
+					<li>
+						<div class=" last feature-box klb-footer-box">
+							<i class="fa fa-briefcase"></i>
+							<div class="content">30 DAYS RETURN <br> SERVICE</div>
+						</div>
+					</li>
+					<!-- <li class="last">
+<div class="feature-box">
+<a href="#"><i class="fab fa-apple"></i> Download</a>
+<a href="#"><i class="fab fa-android"></i> Download</a>
+</div>
+</li> -->
+				</ul>
+			</div>
+		</div>
+		<% include common/footer %>
 	</div>
 
-	<% include common/footer %>
-
 </body>
+
 </html>
