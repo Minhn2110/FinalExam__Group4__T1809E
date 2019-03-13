@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/contactUs.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <section class="google__map">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-12">
+                        <div id="map"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="juiceForm">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-9 juiceForm__leftSection">
+                    <div class="col-md-12 juiceForm__header">
+                        <p class="juiceForm__header--style">Contact Us</p>
+                    </div>
+                    <form action="#">
+                        <div class="col-md-6 juiceForm__col">
+                            <label class="juiceForm__label">Your Name (required)</label>
+                            <input type="text" class="juiceForm__inputtext" name="inputName" onkeyup="changeColorInputName()" required>
+                        </div>
+                        <div class="col-md-6 juiceForm__col">
+                            <label class="juiceForm__label"> Your Email (required)</label>
+                            <input type="email" class="juiceForm__inputtext" name="inputEmail" oninput="changeColorInputEmail()" required>
+                        </div>
+                        <div class="col-md-12 juiceForm__col">
+                            <label class="juiceForm__label"> Subject</label>
+                            <input type="text" class="juiceForm__inputtext" name="inputSubject" oninput="changeColorInputSubject()" required>
+                        </div>
+                        <div class="col-md-12 juiceForm__col">
+                            <label class="juiceForm__label"> Your Message</label>
+                            <input type="textarea" class="juiceForm__inputtextarea">
+                        </div>
+                        <div class="col-md-12 juiceForm__button--wrapper">
+                            <button class="juiceForm__button--style" name="btnSubmit" type="submit"> Submit </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3">
+                    <div class="col-md-12 juiceForm__header">
+                        <p class="juiceForm__header--style">Company</p>
+                        <ul class="juiceForm__item--wrapper">
+                            <li class="juiceForm__items">About Us</li>
+                            <li class="juiceForm__items">Sitemap</li>
+                            <li class="juiceForm__items">Terms of Service</li>
+                            <li class="juiceForm__items">Search Terms</li>
+                            <li class="juiceForm__items">Wishlist</li>
+                            <li class="juiceForm__items">My Account</li>
+                            <li class="juiceForm__items">Checkout</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contactUs__Slogan">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-xs-12">
+                    <div class="col-md-3 col-xs-12 contactUs__Slogan--wrapper">
+                        <div class="contactUs__Slogan--icon--wrapper">
+                            <i class="fas fa-truck contactUs__Slogan--icon--style"></i>
+                        </div>
+                        <p class="contactUs__Slogan--content">FREE SHIPPING on order over $99</p>
+                    </div>
+                    <div class="col-md-3 col-xs-12 contactUs__Slogan--wrapper">
+                        <div class="contactUs__Slogan--icon--wrapper">
+                            <i class="fas fa-phone contactUs__Slogan--icon--style"></i> </div>
+                        <p class="contactUs__Slogan--content">FREE SHIPPING on order over $99</p>
+                    </div>
+                    <div class="col-md-3 col-xs-12 contactUs__Slogan--wrapper">
+                        <div class="contactUs__Slogan--icon--wrapper">
+                            <i class="fas fa-dollar-sign contactUs__Slogan--icon--style"></i> </div>
+                        <p class="contactUs__Slogan--content">FREE SHIPPING on order over $99</p>
+                    </div>
+                    <div class="col-md-3 col-xs-12 contactUs__Slogan--wrapper">
+                        <div class="contactUs__Slogan--icon--wrapper">
+                            <i class="fas fa-briefcase contactUs__Slogan--icon--style"></i>
+                        </div>
+                        <p class="contactUs__Slogan--content">FREE SHIPPING on order over $99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtQXfXt1ZL7_x74PrNmqGSetcHKz48_Y8&callback=initMap"
+        async defer></script>
+    <script src="./js/contactUs.js"></script>
+</body>
+
+</html>

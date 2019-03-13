@@ -34,3 +34,10 @@ app.get("/cart", function(request, response) {
 app.get("/fruit", function(request, response) {
 	response.render("fruit");
 });
+
+app.get("/contactUs", function(request, response) {
+	response.render("contactUs");
+});
+
+
+
