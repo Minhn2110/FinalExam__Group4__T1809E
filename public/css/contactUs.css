@@ -1,9 +1,17 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .google__map {
   width: 100%;
   margin-top: 20%;
 }
-
-.juiceForm__header {
+.google__map #map {
+  height: 450px;
+  width: 100%;
 }
 
 .juiceForm {
@@ -21,31 +29,17 @@
   border-left: 2px #80b435 solid;
 }
 
-#map {
-  height: 450px;
-  width: 100%;
-}
-/* Optional: Makes the sample page fill the window. */
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 .juiceForm__col {
   float: left;
 }
-
-.juiceForm__label {
+.juiceForm__col__label {
   width: 100%;
   font-size: 13px;
   font-weight: normal;
   color: #333;
   margin-right: 10px;
 }
-
-.juiceForm__inputtext {
+.juiceForm__col--inputtext {
   background-color: #fff;
   border: none;
   padding: 10px;
@@ -58,7 +52,7 @@ body {
   z-index: 1;
   position: relative;
 }
-.juiceForm__inputtextarea {
+.juiceForm__col--inputtextarea {
   padding: 10px;
   outline: none;
   color: #333;
@@ -95,7 +89,6 @@ body {
 }
 
 /* Slogan Section */
-
 .contactUs__Slogan {
   margin-top: 3%;
 }
@@ -123,6 +116,7 @@ body {
   line-height: 60px;
   border-radius: 999px;
 }
+
 .contactUs__Slogan--content {
   padding: 0 20px;
   font-weight: 700;
@@ -139,34 +133,34 @@ body {
   .juiceForm__leftSection {
     margin-bottom: 5%;
   }
+
   .juiceForm__item--wrapper {
     text-align: center;
     padding-left: 0;
   }
+
   .juiceForm__header--style {
     text-align: center;
   }
 }
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-}
-
-@media screen and (min-width: 992px) {
-}
-
 .fa-truck:before {
   position: relative;
   top: 15px;
 }
+
 .fa-phone:before {
   position: relative;
   top: 15px;
 }
+
 .fa-dollar-sign:before {
   position: relative;
   top: 15px;
 }
+
 .fa-briefcase:before {
   position: relative;
   top: 15px;
 }
+
+/*# sourceMappingURL=contactUs.css.map */
