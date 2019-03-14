@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <% include common/head %>
+    <link rel="stylesheet" href="./css/fixedHeader.css">
+</head>
+
+<body>
+    <section class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 top-header-area ">
+                    <div class="top-header-content">
+                        <a href="#"><i class="fas fa-phone"></i> <span>(084) 982701819</span></a>
+                        <a href="#"><i class="fas fa-envelope"></i><span>lengocho2604@gmail.com</span></a>
+                    </div>
+                </div>
+
+                <div class="col-6 top-header-area">
+                    <div class="top-header-content">
+                        <div class="top-social-area ml-auto">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="meNu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 image-wrapper">
+                        <img src="./img/logo.png" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <ul class="meNu-wrapper">
+                            <li class="meNu-Items"><a href="#" class="meNu-Links">Home</a></li>
+                            <li class="meNu-Items"><a href="#" class="meNu-Links">Home</a></li>
+                            <li class="meNu-Items"><a href="#" class="meNu-Links">Home</a></li>
+                            <li class="meNu-Items"><a href="#" class="meNu-Links">Home</a></li>
+                            <li class="meNu-Items"><a href="#" class="meNu-Links">Home</a></li>
+                            <li class="meNu-Items"><a href="#" class="meNu-Links">Home</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-2 cart-area">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart
+                            (<span class="total-count"></span>)</button>
+                        <button class="clear-cart btn btn-danger">Clear Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+
+    </section>
+    <div class="xyz"></div>
+
+
+
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+                    </table>
+                    <div>Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

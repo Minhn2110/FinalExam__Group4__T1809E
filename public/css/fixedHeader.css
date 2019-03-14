@@ -1,0 +1,137 @@
+/* * {
+    background-color: #f5f5f5;
+} */
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.col-md-8 {
+    background-color: #fff;
+
+}
+
+
+.top-header-area {
+    height: 50px;
+    background-color: #0e2737;
+}
+
+.top-header-content {
+    width: 100%;
+    display: flex;
+    background-color: #0e2737;
+
+}
+
+.top-header-content>a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 50px;
+    margin-right: 50px;
+}
+
+
+
+.top-header-area .top-header-content>a i {
+    padding-right: 5px;
+    color: #1cc3b2;
+}
+
+
+.top-header-area .top-header-content>a:hover,
+.top-header-area .top-header-content>a:focus {
+    color: #afb4bf;
+}
+
+.top-header-area .top-header-content .top-social-area a {
+    display: inline-block;
+    margin-right: 30px;
+    color: #ffffff;
+    line-height: 50px;
+    font-size: 14px;
+    background-color: #0e2737;
+
+}
+
+.top-header-area .top-header-content .top-social-area a:last-child {
+    margin-right: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .top-header-area .top-header-content .top-social-area a {
+        margin-right: 15px;
+    }
+}
+
+.top-header-area .top-header-content .top-social-area a:hover,
+.top-header-area .top-header-content .top-social-area a:focus {
+    color: #1cc3b2;
+}
+
+
+.meNu {
+    height: 80px;
+}
+
+.image-wrapper {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+
+}
+
+img {
+    width: 100%;
+    background-color: #fff;
+
+}
+
+
+
+.meNu-wrapper {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0;
+    background-color: #fff;
+
+}
+
+.meNu-Items {
+    float: left;
+    width: 16%;
+    background-color: #fff;
+
+
+}
+
+.meNu-Links {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #80b435;
+    line-height: 80px;
+    letter-spacing: 1px;
+    padding: 0 17px;
+    background-color: #fff;
+
+
+}
+
+.cart-area {
+    padding: 0px !important;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+
+}
+
+.xyz {
+    height: 500px;
+}
+

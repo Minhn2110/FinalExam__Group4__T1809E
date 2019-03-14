@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>project</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <% include common/head %>
+</head>
+
+<body>
+    <div class="project">
+        <% include fixedHeader %>
+
+        <!-- Top Header Area Start -->
+
+        <!-- main header -->
+        <div class="main-header container-fluid">
+
+            <!-- control slider -->
+            <div id="home-slider" class="carousel slide my-carousel" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item img-home-slider active" style="background-image: url(img/slide-img1.jpg); background-size: 100% 100%"
+                        data-img-url="img/slide-img1.jpg">
+                        <div class="container h-100">
+                            <div class="row h-100 align-items-center">
+                                <div class="col-12">
+                                    <div class="welcome-text text-center">
+                                        <h2 data-animation="fadeInDown" data-delay="200ms">FRESH LOOK</h2>
+                                        <h2 data-animation="fadeInDown" data-delay="500ms">100% ORGANIC</h2>
+                                        <h6 data-animation="fadeInDown" data-delay="500ms">Farm Fresh Produce Right to
+                                            Your
+                                            Door</h6>
+                                        <a href="#" class="shopnow" data-animation="fadeInDown" data-delay="800ms">Shop
+                                            Now
+                                            ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item img-home-slider" style="background-image: url(img/slide-img2.jpg) ; background-size: 100% 100%"
+                        data-img-url="img/slide-img2.jpg">
+                        <div class="container h-100">
+                            <div class="row h-100 align-items-center">
+                                <div class="col-12">
+                                    <div class="welcome-text text-center">
+                                        <h2 data-animation="fadeInDown" data-delay="200ms">FRESH FOOD</h2>
+                                        <h2 data-animation="fadeInDown" data-delay="500ms">SIMPLY DELICIOUS</h2>
+                                        <h6 data-animation="fadeInDown" data-delay="500ms">We supply highly quality
+                                            organic
+                                            products</h6>
+                                        <a href="#" class="shopnow" data-animation="fadeInDown" data-delay="800ms">Shop
+                                            Now
+                                            ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#home-slider" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#home-slider" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+
+            <div class="slider">
+                <section class="carousel slide" data-ride="carousel" id="postsCarousel">
+                    <!-- control slider -->
+                    <a class="carousel-control-prev prev" href="" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
+                    <a class="carousel-control-next next" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+                    <div class="container">
+                        <div class="carousel-inner">
+                            <div class="row row-equal carousel-item active">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img-top card-img-top-250">
+                                            <img class="img-fluid" src="img/p1-100x100.jpg" alt="Carousel 1">
+                                        </div>
+                                        <div class="card-block">
+                                            <h6 class="small text-wide">FRUITS</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img-top card-img-top-250">
+                                            <img class="img-fluid" src="img/p2-100x100.jpg" alt="Carousel 2">
+                                        </div>
+                                        <div class="card-block">
+                                            <h6 class="small text-wide">SALADS</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img-top card-img-top-250">
+                                            <img class="img-fluid" src="img/p3-100x100.jpg" alt="Carousel 3">
+                                        </div>
+                                        <div class="card-block">
+                                            <h6 class="small text-wide">BEANS</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img-top card-img-top-250">
+                                            <img class="img-fluid" src="img/p5-100x100.jpg" alt="Carousel 3">
+                                        </div>
+                                        <div class="card-block">
+                                            <h6 class="small text-wide">BEANS</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-equal carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img-top card-img-top-250">
+                                            <img class="img-fluid" src="img/p8-100x100.jpg" alt="Carousel 1">
+                                        </div>
+                                        <div class="card-block">
+                                            <h6 class="small text-wide">FRUITS</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img-top card-img-top-250">
+                                            <img class="img-fluid" src="img/p9-100x100.jpg" alt="Carousel 2">
+                                        </div>
+                                        <div class="card-block">
+                                            <h6 class="small text-wide">SALADS</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img-top card-img-top-250">
+                                            <img class="img-fluid" src="img/p11-100x100.jpg" alt="Carousel 3">
+                                        </div>
+                                        <div class="card-block">
+                                            <h6 class="small text-wide">BEANS</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img-top card-img-top-250">
+                                            <img class="img-fluid" src="img/p12-100x100.jpg" alt="Carousel 3">
+                                        </div>
+                                        <div class="card-block">
+                                            <h6 class="small text-wide">BEANS</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--next content -->
+            <div class="container">
+                <div class="row banner">
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <img src="img/banner-img1.jpg" alt="banner-img1">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <img src="img/banner-img2.jpg" alt="banner-img1">
+                    </div>
+                </div>
+            </div>
+
+            <!--next content Best-Seller -->
+            <div class="best-seller">
+                <section class="carousel slide" data-ride="carousel" id="best-seller">
+                    <!-- control slider -->
+                    <div class="row header-best-seller container">
+                        <div class="col-1 jumbotron text-center">
+                            <a class="carousel-control-prev prev" href="" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
+                        </div>
+                        <div class="col-10 text-center">
+                            <h1>BESTSELLER</h1>
+                            <p style="background-color: #86B83F; color: white">SO YOU GET TO KNOW ME SELLER</p>
+                        </div>
+                        <div class="col-1 jumbotron text-center justify-content-center">
+                            <a class="carousel-control-next next" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="carousel-inner">
+                            <div class="row row-icon-best-seller carousel-item active">
+                                <div class="col-md-3">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="img/p2.jpg" alt="p2.jpg">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Organic Sweet Corn</h6>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star" data-rating="1"></span>
+                                                <span class="fa fa-star" data-rating="2"></span>
+                                                <span class="fa fa-star" data-rating="3"></span>
+                                                <span class="fa fa-star-o" data-rating="4"></span>
+                                                <span class="fa fa-star-o" data-rating="5"></span>
+                                            </div>
+                                            <p class="card-text"><del><strong>£20.00</strong></del> <strong>£15.99</strong></p>
+                                            <a href="#" class="btn btn-primary stretched-link">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="img/p3.jpg" alt="p3.jpg">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Organic Grape Tomatoes</h6>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star" data-rating="1"></span>
+                                                <span class="fa fa-star" data-rating="2"></span>
+                                                <span class="fa fa-star-o" data-rating="3"></span>
+                                                <span class="fa fa-star-o" data-rating="4"></span>
+                                                <span class="fa fa-star-o" data-rating="5"></span>
+                                            </div>
+                                            <p class="card-text"><strong>£7.99</strong></p>
+                                            <a href="#" class="btn btn-primary stretched-link">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="img/p5.jpg" alt="p5.jpg">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Organic Green Cabbage</h6>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star" data-rating="1"></span>
+                                                <span class="fa fa-star" data-rating="2"></span>
+                                                <span class="fa fa-star" data-rating="3"></span>
+                                                <span class="fa fa-star" data-rating="4"></span>
+                                                <span class="fa fa-star-o" data-rating="5"></span>
+                                            </div>
+                                            <p class="card-text"><del><strong>£30.99</strong></del> <strong>£10.99</strong></p>
+                                            <a href="#" class="btn btn-primary stretched-link">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="img/p6.jpg" alt="p6.jpg">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Organic Sweet Banana</h6>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star" data-rating="1"></span>
+                                                <span class="fa fa-star" data-rating="2"></span>
+                                                <span class="fa fa-star" data-rating="3"></span>
+                                                <span class="fa fa-star" data-rating="4"></span>
+                                                <span class="fa fa-star" data-rating="5"></span>
+                                            </div>
+                                            <p class="card-text"><del><strong>£16.99</strong></del> <strong>£5.99</strong></p>
+                                            <a href="#" class="btn btn-primary stretched-link">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-icon-best-seller carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="img/p7.jpg" alt="p7.jpg">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Organic Red Delicious Apple</h6>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star" data-rating="1"></span>
+                                                <span class="fa fa-star" data-rating="2"></span>
+                                                <span class="fa fa-star-o" data-rating="3"></span>
+                                                <span class="fa fa-star-o" data-rating="4"></span>
+                                                <span class="fa fa-star-o" data-rating="5"></span>
+                                            </div>
+                                            <p class="card-text"><del><strong>£21.00</strong></del> <strong>£13.99</strong></p>
+                                            <a href="#" class="btn btn-primary stretched-link">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="img/p9.jpg" alt="p9.jpg">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Organic Delicious Bean</h6>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star" data-rating="1"></span>
+                                                <span class="fa fa-star" data-rating="2"></span>
+                                                <span class="fa fa-star-o" data-rating="3"></span>
+                                                <span class="fa fa-star-o" data-rating="4"></span>
+                                                <span class="fa fa-star-o" data-rating="5"></span>
+                                            </div>
+                                            <p class="card-text"><strong>£9.99</strong></p>
+                                            <a href="#" class="btn btn-primary stretched-link">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="img/p10.jpg" alt="p10.jpg">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Organic Green Bell Pepper</h6>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star" data-rating="1"></span>
+                                                <span class="fa fa-star" data-rating="2"></span>
+                                                <span class="fa fa-star" data-rating="3"></span>
+                                                <span class="fa fa-star" data-rating="4"></span>
+                                                <span class="fa fa-star-o" data-rating="5"></span>
+                                            </div>
+                                            <p class="card-text"><del><strong>£27.99</strong></del> <strong>£18.99</strong></p>
+                                            <a href="#" class="btn btn-primary stretched-link">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="img/p11.jpg" alt="p11.jpg">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Organic Strawberry</h6>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star" data-rating="1"></span>
+                                                <span class="fa fa-star" data-rating="2"></span>
+                                                <span class="fa fa-star" data-rating="3"></span>
+                                                <span class="fa fa-star" data-rating="4"></span>
+                                                <span class="fa fa-star" data-rating="5"></span>
+                                            </div>
+                                            <p class="card-text"><del><strong>£12.99</strong></del> <strong>£4.99</strong></p>
+                                            <a href="#" class="btn btn-primary stretched-link">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--Lastest New -->
+            <div class="container">
+
+                <div class="row lastest-new">
+                    <div class="col-12 col-md-12 col-sm-12 lastest-new text-center mt-5">
+                        <img src="img/blog-img.png" alt="blog-img">
+                        <h1>LASTEST NEWS</h1>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 mt-4">
+                        <div class="card">
+                            <img class="card-img-top" src="img/blog-img1-391x207.jpg" alt="blog-img1">
+                            <div class="card-body">
+                                <h3>Powerful and flexible premium Ecommerce themes</h3>
+                                <p class="card-text">Fusce ac pharetra urna. Duis non lacus sit amet lacus interdum
+                                    facilisis sed non est. Ut mi metus, semper eu</p>
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link" href="#">View</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Edit</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 mt-4">
+                        <div class="card">
+                            <img class="card-img-top" src="img/blog-img2-391x207.jpg" alt="blog-img2">
+                            <div class="card-body">
+                                <h3>Awesome template with lot’s of features on the board!</h3>
+                                <p class="card-text">Fusce ac pharetra urna. Duis non lacus sit amet lacus interdum
+                                    facilisis sed non est. Ut mi metus, semper eu</p>
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link" href="#">View</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Edit</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 mt-4">
+                        <div class="card">
+                            <img class="card-img-top" src="img/blog-img3-391x207.jpg" alt="blog-img3">
+                            <div class="card-body">
+                                <h3>Premium template with unlimited colours, and fully Customizable</h3>
+                                <p class="card-text">Fusce ac pharetra urna. Duis non lacus sit amet lacus interdum
+                                    facilisis sed non est. Ut mi metus, semper eu</p>
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link" href="#">View</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Edit</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--footer-->
+            <div class="container-fluid" id="footer">
+                <footer class="container ">
+                    <div class="row footer">
+
+                        <div id="foot1" class="col-md-3 col-sm-3">
+
+                            <h4>SHOPPING GUIDE</h4>
+                            <h6><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted">
+                                    <b>Blog</b></a></h6>
+                            <h6><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted">
+                                    <b>FAQs</b></a></h6>
+                            <h6><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted">
+                                    <b>Payment</b></a></h6>
+                            <h6><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted">
+                                    <b>Shipment</b></a></h6>
+                            <h6><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted">
+                                    <b>Where is my order</b></a></h6>
+                            <h6><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted">
+                                    <b>Return Policy</b></a></h6>
+                        </div>
+
+                        <div id="foot2" class="col-md-3 col-sm-3">
+                            <h4>STYLE ADVISOR</h4>
+
+                            <h6><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted">
+                                    <b>Your Account</b></a></h6>
+                            <h6><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted">
+                                    <b>Information</b></a></h6>
+                            <h6><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted">
+                                    <b>Addresses</b></a></h6>
+                            <h6><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"><b>Discount</b></a></h6>
+                            <h6><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"><b>Orders
+                                        History</b></a></h6>
+                            <h6><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"><b>Order
+                                        Tracking</b></a></h6>
+                            <h6><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"><b>
+                                        Contact Us</b></a></h6>
+                        </div>
+
+                        <div id="foot3" class="col-md-3 col-sm-3">
+                            <h4>INFORMATION</h4>
+                            <h6><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted">
+                                    <b>Site Map</b></a></h6>
+                            <h6><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted">
+                                    <b>Search Terms</b></a></h6>
+                            <h6><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted">
+                                    <b>Advanced Search</b></a></h6>
+                            <h6><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted">
+                                    <b>About Us</b></a></h6>
+                            <h6><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted">
+                                    <b>Contact Us</b></a></h6>
+                            <h6><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted">
+                                    <b>Suppliers</b></a></h6>
+                        </div>
+
+                        <div id="foot4" class="col-md-3 col-sm-3">
+                            <h4>CONTACT US</h4><br>
+                            <ul class="social-network social-circle">
+                                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </footer>
+            </div>
+
+            <section class="container-fluid" id="foot5">
+                <h4 class="text-center text-muted">Project HHMS © 2019 </h4>
+            </section>
+
+        </div>
+    </div>
+    <script src="./js/slider.js"></script>
+    <% include common/bottom %>
+
+</body>
+
+</html>

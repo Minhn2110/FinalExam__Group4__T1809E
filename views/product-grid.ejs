@@ -9,6 +9,15 @@
 </head>
 
 <body>
+    <% include fixedHeader %>
+
+    <div class="backgroundProduct">
+        <h1 class="page-title">Products</h1>
+
+    </div>
+
+
+
     <section class="productGrid">
         <div class="container">
             <div class="row">
@@ -114,11 +123,13 @@
                                 <img src="<%= products.image %>" class="product-image"></img>
                             </a>
                             <div class="product-name">
-                                    <%= products.name %>
+                                <%= products.name %>
                             </div>
                             <div class="product-price">
-                                    <%= products.price %>
+                                <%= products.price %>
                             </div>
+                            <a href="#" data-name="<%= products.name %>" data-price="<%= products.price %>" class="add-to-cart btn btn-primary">Add
+                                to cart</a>
                         </div>
                         <% } %>
 
@@ -127,4 +138,6 @@
             </div>
         </div>
     </section>
+    <% include common/bottom %>
+
 </body>

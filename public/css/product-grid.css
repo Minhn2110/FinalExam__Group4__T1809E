@@ -3,11 +3,33 @@
 }
 
 
+.backgroundProduct {
+    background-size: cover;
+    border-bottom: none;
+    text-align: center;
+    background-repeat: no-repeat;
+    background: url('http://klbtheme.com/qualis/wp-content/uploads/2018/12/category-bg.jpg');
+    padding: 165px 0 50px;
+    
+}
+.page-title {
+    color: #fff;
+    font-family: oswald,sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 25px;
+    letter-spacing: 1px;
+    text-align: center;
+    background: transparent;
 
-.productGrid {
-    margin-top: 5%;
+    
 }
 
+.productGrid {
+    margin-top:5%;
+
+}
 .menu_Wrapper {
     background-color: #ffff;
 }
@@ -147,6 +169,7 @@
     font-weight: 400;
     font-family: oswald, sans-serif;
 }
+
 .slider-header {
     font-size: 46px;
     text-transform: uppercase;
@@ -154,7 +177,7 @@
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 2px;
-    font-family: oswald,sans-serif;
+    font-family: oswald, sans-serif;
 }
 
 .slider-discount {
@@ -188,20 +211,21 @@
 
 
 .pGridSection {
-    margin-top:5%;
+    margin-top: 5%;
 }
 
 .product-wrapper {
-    padding-left:0px !important;
-    padding-right:0px !important;
-    float:left;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    float: left;
     border-right: 1px #eaeaea solid;
     border-bottom: 1px #eaeaea solid
 }
 
 .product-image {
-    width:100%;
+    width: 100%;
 }
+
 .product-name {
     font-weight: 500;
     color: #292929;
@@ -209,11 +233,12 @@
     font-size: 16px;
     overflow: hidden;
     letter-spacing: normal;
-    font-family: rubik,sans-serif;
+    font-family: rubik, sans-serif;
     text-align: center;
     background: #fff;
 
 }
+
 .product-price {
     font-weight: 500;
     font-size: 14px;
@@ -223,11 +248,12 @@
 
 }
 
-@media screen and (min-width: 1200px) {
+.total-count {
+    background: transparent;
+}
+
+/* @media screen and (min-width: 1200px) {
     .container {
         max-width: 1240px !important;
     }
-}
-
-
-
+} */
