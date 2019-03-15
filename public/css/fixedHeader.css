@@ -40,6 +40,8 @@
 .top-header-area .top-header-content>a i {
     padding-right: 5px;
     color: #1cc3b2;
+    background: transparent;
+
 }
 
 
@@ -73,16 +75,40 @@
     color: #1cc3b2;
 }
 
+.info {
+    background: transparent;
+}
+
+.fab {
+    background: transparent;
+
+}
+.top-social-area {
+    display:flex;
+    justify-content: flex-end;
+    background: transparent;
+
+}
+
 
 .meNu {
     height: 80px;
+}
+
+.meNu-Section {
+    padding-left:0px;
+    padding-right:0px;
+    background-color: #fff;
+
 }
 
 .image-wrapper {
     width: 100%;
     padding: 20px;
     background-color: #fff;
-
+    display: flex;
+    align-items: center;
+    border-right: 1px #eaeaea solid;
 }
 
 img {
@@ -103,11 +129,13 @@ img {
 
 .meNu-Items {
     float: left;
-    width: 16%;
+    width: 14%;
     background-color: #fff;
-
-
+    text-align: center;
 }
+
+
+
 
 .meNu-Links {
     font-size: 14px;
@@ -116,10 +144,7 @@ img {
     color: #80b435;
     line-height: 80px;
     letter-spacing: 1px;
-    padding: 0 17px;
     background-color: #fff;
-
-
 }
 
 .cart-area {
@@ -131,7 +156,40 @@ img {
 
 }
 
-.xyz {
-    height: 500px;
+
+.cart-button {
+    margin: 0px 5px;
+    background-color: #007bff;
+    letter-spacing: 1px;
+    font-size: 14px;
+    border-radius: 0px;
+
+}
+.clear-cart {
+    margin: 0px 5px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    border-radius: 0px;
+
+
 }
 
+.search-button-area {
+    background-color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+}
+
+.search-button {
+    font-size: 25px;
+    background-color: #fff;
+    margin:5px;
+}
+.search-area {
+    margin:5px;
+    width:100%;
+    background-color: #fff;
+    border: 1px #eaeaea solid;
+    padding:7px;
+}

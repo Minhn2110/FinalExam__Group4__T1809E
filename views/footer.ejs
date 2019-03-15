@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <% include common/head %>
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+    <div class="footer__Middle">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <h4 class="footer__Header">SHOPPING GUIDE</h4>
+                    <ul class="footer__wrapper">
+                        <% for(var items of footerListOne) { %>
+                        <li class="foooter__item"><a href="<%= items.link %>" class="footer__link">
+                                <%= items.name %></a></li>
+                        <% } %>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <h4 class="footer__Header">STYLE ADVISOR</h4>
+                    <ul class="footer__wrapper">
+                        <% for(var items of footerListTwo) { %>
+                        <li class="foooter__item"><a href="<%= items.link %>" class="footer__link">
+                                <%= items.name %></a></li>
+                        <% } %>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <h4 class="footer__Header">INFORMATION</h4>
+                    <ul class="footer__wrapper">
+                        <% for(var items of footerListThree) { %>
+                        <li class="foooter__item"><a href="<%= items.link %>" class="footer__link">
+                                <%= items.name %></a></li>
+                        <% } %>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <h4 class="footer__Header">CONTACT US</h4><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer__bottom--wrapper">
+        <div class="footer__bottom"> 
+            <h4 class="footer__bottom--content">Project HHMS © 2019</h4>
+        </div>
+    </div>
+
+</body>

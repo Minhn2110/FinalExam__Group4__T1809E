@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+
 
 
 .main-header {
@@ -8,6 +6,7 @@
     height: 80px;
     line-height: 40px;
     background-color: #ffffff;
+    margin-top:8%;
 }
 
 .main-header .navbar {
@@ -125,73 +124,9 @@
     color: yellow;
 }
 
-#footer {
-    background-color: #252932;
-}
-
-#footer .footer {
-    padding-top: 15px;
-}
-
-footer {
-    background-color: #252932;
-    color: white;
-    padding-bottom: 45px;
-}
-
-#foot1,
-#foot2,
-#foot3,
-#foot4 a:hover {
-    color: white;
-    padding-left: 5px;
-}
-
-#foot1,
-#foot2,
-#foot3,
-#foot4 h4 {
-    color: #86B83F;
-}
 
 
-ul.social-network {
-    list-style: none;
-    display: inline;
-    margin-left: 0 !important;
-    padding: 0;
 
-}
-
-ul.social-network li {
-    display: inline;
-    margin: 0 5px;
-}
-
-.social-network a.icoRss {
-    background-color: #F56505;
-    color: #fff;
-}
-
-.social-network a.icoFacebook {
-    background-color: #3B5998;
-    color: #fff;
-}
-
-.social-network a.icoTwitter {
-    background-color: #33ccff;
-    color: #fff;
-}
-
-.social-network a.icoTumblr {
-    background-color: #007bb7;
-    color: #fff;
-}
-
-.social-network a.icoLinkedin {
-    background-color: #3B5998;
-    color: #fff;
-}
 
 a.socialIcon:hover,
 .socialHoverClass {
@@ -216,4 +151,71 @@ a.socialIcon:hover,
     margin: 0;
     line-height: 50px;
     text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.best-seller {
+}
+
+
+
+.hpCTA {
+    margin-top:30%;
+}
+
+
+
+/* Slick Section */
+
+
+.pGridSection {
+    margin-top: 5%;
+}
+
+.product-wrapper {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    float: left;
+    /* border-right: 1px #eaeaea solid;
+    border-bottom: 1px #eaeaea solid */
+    border: 1px #eaeaea solid;
+}
+
+.product-image {
+    width: 100%;
+}
+
+.product-name {
+    font-weight: 500;
+    color: #292929;
+    padding: 0 15px;
+    font-size: 16px;
+    overflow: hidden;
+    letter-spacing: normal;
+    font-family: rubik, sans-serif;
+    text-align: center;
+    background: #fff;
+
+}
+
+.product-button {
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+
+.product-price {
+    font-weight: 500;
+    font-size: 14px;
+    color: #131e2c;
+    text-align: center;
+    background: #fff;
+
 }

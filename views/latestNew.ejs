@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <% include common/head %>
+    <link rel="stylesheet" href="./css/latestNew.css">
+</head>
+
+<body>
+    <div class="latestNew">
+        <div class="container">
+            <div class="row">
+                <h1 class="latestNew__Header">LATEST NEW</h1>
+                <% for(var content of latestNew) { %>
+                <div class="col-md-4 col-xs-12">
+                    <div class="latestNew__Image--wrapper">
+                        <img src="<%= content.image %>" alt="">
+                    </div>
+                    <div class="latestNew__Wrapper">
+                        <h3 class="latestNew__title">
+                            <%= content.header %>
+                        </h3>
+                        <p class="latestNew__content">
+                            <%= content.paragraph %>
+                        </p>
+                    </div>
+                </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</body>

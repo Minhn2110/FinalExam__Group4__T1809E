@@ -1,0 +1,38 @@
+.latestNew__Header {
+    width:100%;
+    font-size: 42px;
+    margin: 0 0;
+    font-weight: 500;
+    color: #292929;
+    text-align: center;
+    padding-bottom: 40px;
+    letter-spacing: .5px;
+    font-family: oswald,sans-serif;
+    text-transform: uppercase;
+    padding-top: 90px;
+}
+
+
+img {
+    width:100%;
+}
+
+.latestNew__Wrapper {
+    padding: 15px;
+}
+
+.latestNew__title {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: rubik,sans-serif;
+    padding-bottom: 15px;
+    line-height: 1.4em;
+}
+
+.latestNew__content {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    text-align: left;
+    color: #777;
+}
