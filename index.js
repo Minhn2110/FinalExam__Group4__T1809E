@@ -43,6 +43,10 @@ app.get("/fixedHeader", function (request, response) {
 	response.render("fixedHeader");
 });
 
+app.get("/head", function (request, response) {
+	response.render("common/head");
+});
+
 app.get("/homePage", function (request, response) {
 	response.render("homePage", {
 		itemList: [

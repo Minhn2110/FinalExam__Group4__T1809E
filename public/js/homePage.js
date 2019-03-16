@@ -3,6 +3,7 @@ $('.your-class').slick({
     arrows: false,
     infinite: false,
     speed: 300,
+    autoplay:true,
     slidesToShow: 5,
     slidesToScroll: 3,
     responsive: [
