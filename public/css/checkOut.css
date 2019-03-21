@@ -1,0 +1,211 @@
+* {
+    background-color: #f5f5f5;
+}
+
+
+.backgroundProduct {
+    background-size: cover;
+    border-bottom: none;
+    text-align: center;
+    background-repeat: no-repeat;
+    background: url('http://klbtheme.com/qualis/wp-content/uploads/2018/12/category-bg.jpg');
+    padding: 165px 0 50px;
+}
+
+.page-title {
+    color: #fff;
+    font-family: oswald, sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 25px;
+    letter-spacing: 1px;
+    text-align: center;
+    background: transparent;
+}
+
+.checkOut {
+    padding-top: 5%;
+}
+
+.checkOut--wrapper {
+    background:#fff;
+}
+
+.checkOut__Title {
+    width:100%;
+    color: #80b435;
+    font-family: rubik,sans-serif;
+    font-weight: 700;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom:0;
+    background:#fff;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+.checkOut__Input--Wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #fff;
+
+}
+
+
+.inputCheckOut__Label {
+    margin-bottom: 5px;
+    background: #fff;
+    font-weight:600;
+    letter-spacing: -0.5px;
+
+}
+.inputText__CheckOut {
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    color: #333;
+    border: 1px #ddd solid;
+    border-radius: 999px;
+    background: #fff;
+}
+
+.inputArea__CheckOut {
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    padding: 30px;
+    outline: none;
+    color: #333;
+    border: 1px #ddd solid;
+    border-radius: 999px;
+    padding-left: 15px;
+}
+
+
+
+
+
+/* JS HTML */
+
+.show-cart {
+    margin-bottom:0 !important;
+}
+
+td {
+    background-color: #fff;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+ 
+}
+
+.plusCheckOutMinus {
+    background: #80b435;
+    border: 5px #fff solid;
+    box-shadow: none;
+    color: #fff !important;
+    border-radius: 999px;
+    width: 40px;
+    height: 40px;
+    text-decoration: none !important;
+    position: relative;
+    left: -6px;
+}
+
+.plusCheckOutPlus {
+    background: #80b435;
+    border: 5px #fff solid;
+    box-shadow: none;
+    color: #fff !important;
+    border-radius: 999px;
+    width: 40px;
+    height: 40px;
+    text-decoration: none !important;
+    position: relative;
+    right: -6px;
+}
+
+.inputCheckOut {
+background: #fff;
+}
+
+.item-count {
+    text-align: center !important;
+
+}
+
+.checkOut__Table--title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing:-0.5px;
+}
+
+.checkOut__Bottom--wrapper {
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+
+.checkOut__TotalPrice {
+    font-size: 22px !important;
+    font-weight: 700;
+    background: #fff;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+}
+.total-cart {
+    background: #fff !important;
+    font-size: 22px !important;
+
+}
+
+.checkOut__Note {
+    font-size: 14px;
+    background: #fff;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    margin-bottom:0;
+}
+
+.checkOut__button--wrapper {
+    background: #fff !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+    padding-bottom: 20px;
+}
+.checkOut__button {
+    margin-top: 15px;
+    margin-left:5%;
+    background: #88be4c;
+    padding: 15px;
+    color: #fff;
+    border: none;
+    display: inline-block;
+    font-size: 13px;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 500;
+    border-radius: 999px;
+    letter-spacing: .5px;
+    font-family: rubik,sans-serif;
+}
+
+
+/* Responsive Section */
+
+@media only screen and (max-width: 767px) {
+    * {
+        font-size:13px;
+    }
+    .checkOut__Table--title {
+        font-size:12px;
+    }
+    .plusCheckOutPlus {
+        display:none;
+    }
+    .plusCheckOutMinus {
+        display:none;
+    }
+}
+

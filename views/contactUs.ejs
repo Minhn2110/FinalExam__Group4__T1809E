@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <% include components/fixedHeader %>
+
+
+    <div class="backgroundProduct">
+        <h1 class="page-title">Contact Us</h1>
+    </div>
     <section class="google__map">
         <div class="container">
             <div class="row">
@@ -33,15 +39,18 @@
                     <form action="#">
                         <div class="col-md-6 juiceForm__col">
                             <label class="juiceForm__label">Your Name (required)</label>
-                            <input type="text" class="juiceForm__col--inputtext" name="inputName" onkeyup="changeColorInputName()" required>
+                            <input type="text" class="juiceForm__col--inputtext" name="inputName" onkeyup="changeColorInputName()"
+                                required>
                         </div>
                         <div class="col-md-6 juiceForm__col">
                             <label class="juiceForm__label"> Your Email (required)</label>
-                            <input type="email" class="juiceForm__col--inputtext" name="inputEmail" oninput="changeColorInputEmail()" required>
+                            <input type="email" class="juiceForm__col--inputtext" name="inputEmail" oninput="changeColorInputEmail()"
+                                required>
                         </div>
                         <div class="col-md-12 juiceForm__col">
                             <label class="juiceForm__label"> Subject</label>
-                            <input type="text" class="juiceForm__col--inputtext" name="inputSubject" oninput="changeColorInputSubject()" required>
+                            <input type="text" class="juiceForm__col--inputtext" name="inputSubject" oninput="changeColorInputSubject()"
+                                required>
                         </div>
                         <div class="col-md-12 juiceForm__col">
                             <label class="juiceForm__label"> Your Message</label>
@@ -101,8 +110,8 @@
             </div>
         </div>
     </section>
-
-    <script src="./js/contactUs.js"></script>
+    <% include components/footer %>
+    <% include common/bottom %>
 </body>
 
 </html>

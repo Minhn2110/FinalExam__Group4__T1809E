@@ -5,9 +5,35 @@ body {
   padding: 0;
 }
 
+
+.backgroundProduct {
+  background-size: cover;
+  border-bottom: none;
+  text-align: center;
+  background-repeat: no-repeat;
+  background: url('http://klbtheme.com/qualis/wp-content/uploads/2018/12/category-bg.jpg');
+  padding: 165px 0 50px;
+
+}
+
+.page-title {
+  color: #fff;
+  font-family: oswald, sans-serif;
+  font-size: 42px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0 25px;
+  letter-spacing: 1px;
+  text-align: center;
+  background: transparent;
+
+
+}
+
 .google__map {
   width: 100%;
-  margin-top: 20%;
+  padding-top: 5%;
+  background: #f5f5f5;
 }
 .google__map #map {
   height: 450px;
@@ -15,7 +41,8 @@ body {
 }
 
 .juiceForm {
-  margin-top: 3%;
+  padding-top: 3%;
+  background: #f5f5f5;
 }
 
 .juiceForm__header--style {
@@ -90,12 +117,16 @@ body {
 
 /* Slogan Section */
 .contactUs__Slogan {
-  margin-top: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background: #f5f5f5;
 }
 
 .contactUs__Slogan--wrapper {
   float: left;
   height: 174px;
+  background: #fff;
+  border-right: 1px #eaeaea solid;
 }
 
 .contactUs__Slogan--icon--wrapper {
@@ -163,4 +194,3 @@ body {
   top: 15px;
 }
 
-/*# sourceMappingURL=contactUs.css.map */

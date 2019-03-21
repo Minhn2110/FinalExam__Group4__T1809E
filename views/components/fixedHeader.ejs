@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <% include common/head %>
-    <link rel="stylesheet" href="./css/fixedHeader.css">
+    <% include ../common/head %>
+    <link rel="stylesheet" href="./css/components/fixedHeader.css">
 </head>
 
 <body>
@@ -33,31 +33,33 @@
         <div class="meNu">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-1 col-xs-1 image-wrapper">
-                        <img src="./img/logo.png" alt="">
+                    <div class="col-md-12 col-lg-2 col-xs-1 image-wrapper">
+                        <img class="header-logo" src="./img/logo.png" alt="">
                     </div>
-                    <div class="col-md-7 meNu-Section">
+                    <div class="col-md-12 col-lg-6 col-xs-12 meNu-Section">
                         <ul class="meNu-wrapper">
                             <li class="meNu-Items"><a href="homePage" class="meNu-Links">Home</a></li>
                             <li class="meNu-Items"><a href="product-grid" class="meNu-Links">PRODUCT</a></li>
-                            <li class="meNu-Items"><a href="#" class="meNu-Links">LOCATION</a></li>
-                            <li class="meNu-Items"><a href="#" class="meNu-Links">FRANCHISING</a></li>
-                            <li class="meNu-Items"><a href="#" class="meNu-Links">CATERING</a></li>
+                            <li class="meNu-Items"><a href="contactUs" class="meNu-Links">CONTACT US</a></li>
                             <li class="meNu-Items"><a href="#" class="meNu-Links">FEED BACK</a></li>
-                            <li class="meNu-Items"><a href="#" class="meNu-Links">ABOUT US</a></li>
-                        
+                            <li class="meNu-Items"><a href="aboutUs" class="meNu-Links">ABOUT US</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-2 search-button-area">
+                    <div class="col-md-2 col-lg-2 search-button-area">
                         <i class="fas fa-search search-button"></i>
                         <input type="text" class="search-area" placeholder="Search">
                     </div>
-                    <div class="col-md-2 cart-area">
-                        <button type="button" class="btn btn-primary cart-button" data-toggle="modal" data-target="#cart">CART
-                            [<span class="total-count"></span>]</button>
+                    <div class="col-md-12 col-lg-2 cart-area">
+                        <div class="meNu-Section--mobile" data-toggle="modal" data-target="#menuModal">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        <div class="cart-button" data-toggle="modal" data-target="#cart">
+                            <i class="fas fa-shopping-cart">
+                                <span class="total-count"></span>
+                            </i>
+                        </div>
                         <button class="clear-cart btn btn-danger">CLEAR CART</button>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -78,13 +80,38 @@
                 <div class="modal-body">
                     <table class="show-cart table">
                     </table>
-                    <div>Total price: $<span class="total-cart"></span></div>
+                    <div class= "checkOut__TotalPrice">Total price: $<span class="total-cart"></span></div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Order now</button>
+                    <button type="button" class="btn btn-primary">
+                        <a class = "abc"href="checkOut">Order Now</a></button>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
+
+<div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog meNu-Modal-dialog" role="document">
+        <div class="modal-content meNu-Modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">OUR MENU</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul class="meNu-wrapper-mobile">
+                    <li class="meNu-Items-mobile"><a href="homePage" class="meNu-Links-mobile">Home</a></li>
+                    <li class="meNu-Items-mobile"><a href="product-grid" class="meNu-Links-mobile">PRODUCT</a></li>
+                    <li class="meNu-Items-mobile"><a href="contactUs" class="meNu-Links-mobile">CONTACT US</a></li>
+                    <li class="meNu-Items-mobile"><a href="#" class="meNu-Links-mobile">CATERING</a></li>
+                    <li class="meNu-Items-mobile"><a href="#" class="meNu-Links-mobile">FEED BACK</a></li>
+                    <li class="meNu-Items-mobile"><a href="aboutUs" class="meNu-Links-mobile">ABOUT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/checkOut.css">
+    <% include common/head %>
+</head>
+<body>
+    <% include components/fixedHeader %>
+    <div class="backgroundProduct">
+        <h1 class="page-title">Check Out</h1>
+    </div>
+    <section class="checkOut">
+        <div class="container">
+            <div class="checkOut--wrapper">
+                <div class="row">
+                    <h3 class="checkOut__Title">Billing Detail</h3>
+                    <div class="col-md-6 checkOut__Input--Wrapper">
+                        <label for="" class="inputCheckOut__Label">First name</label>
+                        <input type="text" class="inputText__CheckOut">
+                    </div>
+                    <div class="col-md-6 checkOut__Input--Wrapper">
+                        <label for="" class="inputCheckOut__Label">Last name</label>
+                        <input type="text" class="inputText__CheckOut">
+                    </div>
+                    <div class="col-md-6 checkOut__Input--Wrapper">
+                        <label for="" class="inputCheckOut__Label">Street Address</label>
+                        <input type="text" class="inputText__CheckOut">
+                    </div>
+                    <div class="col-md-6 checkOut__Input--Wrapper">
+                        <label for="" class="inputCheckOut__Label">Phone</label>
+                        <input type="number" class="inputText__CheckOut">
+                    </div>
+                    <div class="col-md-12 checkOut__Input--Wrapper">
+                        <label for="" class="inputCheckOut__Label">Order Notes (optional)</label>
+                        <input type="area" class="inputArea__CheckOut">
+                    </div>
+                    <h3 class="checkOut__Title">Your Order</h3>
+                    <table class="show-cart table">
+                    </table>
+                    <div class="col-12 checkOut__Bottom--wrapper">
+                        <div class="checkOut__TotalPrice">Total price: $<span class="total-cart"></span></div>
+                        <p class="checkOut__Note">Sorry, it seems that there are no available payment methods for your
+                            state. Please contact
+                            us if you require assistance or wish to make alternate arrangements.
+                            Your personal data will be used to process your order, support your experience throughout
+                            this website, and for other purposes described in our privacy policy.
+                            PLACE ORDER</p>
+                        <div class=" checkOut__button--wrapper">
+                            <button class="checkOut__button">Place Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <% include components/latestNew %>
+    <% include components/footer %>
+    <% include common/bottom %>
+</body>

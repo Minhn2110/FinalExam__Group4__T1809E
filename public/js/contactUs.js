@@ -1,6 +1,6 @@
 var map;
 var inputName = document.getElementsByName('inputName');
-var btnSubmit = document.getElementsByName('btnSubmit');
+var btnSubmit = document.querySelectorAll('btnSubmit');
 const inputEmail = document.getElementsByName('inputEmail')
 const inputSubject = document.getElementsByName('inputSubject')
 
@@ -55,7 +55,7 @@ function changeColorInputSubject() {
   }
 };
 
-btnSubmit[0].addEventListener('click', function () {
-  btnSubmit[0].style.backgroundColor = "orange";
-});
+// btnSubmit[0].addEventListener('click', function () {
+//   btnSubmit[0].style.backgroundColor = "orange";
+// });
 

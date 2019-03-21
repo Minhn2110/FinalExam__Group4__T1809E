@@ -7,6 +7,7 @@
     top: 0;
     width: 100%;
     z-index: 100;
+    background: transparent !important;
 }
 
 .col-md-8 {
@@ -64,11 +65,7 @@
     margin-right: 0;
 }
 
-@media only screen and (max-width: 767px) {
-    .top-header-area .top-header-content .top-social-area a {
-        margin-right: 15px;
-    }
-}
+
 
 .top-header-area .top-header-content .top-social-area a:hover,
 .top-header-area .top-header-content .top-social-area a:focus {
@@ -83,8 +80,9 @@
     background: transparent;
 
 }
+
 .top-social-area {
-    display:flex;
+    display: flex;
     justify-content: flex-end;
     background: transparent;
 
@@ -93,14 +91,16 @@
 
 .meNu {
     height: 80px;
+    background: transparent !important;
 }
 
 .meNu-Section {
-    padding-left:0px;
-    padding-right:0px;
+    padding-left: 0px;
+    padding-right: 0px;
     background-color: #fff;
 
 }
+
 
 .image-wrapper {
     width: 100%;
@@ -109,12 +109,13 @@
     display: flex;
     align-items: center;
     border-right: 1px #eaeaea solid;
+    text-align: center;
 }
 
-img {
-    width: 100%;
+.header-logo {
     background-color: #fff;
-
+    width: 107px;
+    margin: auto;
 }
 
 
@@ -124,14 +125,17 @@ img {
     padding: 0px;
     margin: 0;
     background-color: #fff;
+    height: 100%;
+    display: flex;
 
 }
 
 .meNu-Items {
     float: left;
-    width: 14%;
+    width: 20%;
     background-color: #fff;
     text-align: center;
+    margin: auto;
 }
 
 
@@ -142,7 +146,6 @@ img {
     font-weight: 500;
     text-transform: uppercase;
     color: #80b435;
-    line-height: 80px;
     letter-spacing: 1px;
     background-color: #fff;
 }
@@ -163,8 +166,10 @@ img {
     letter-spacing: 1px;
     font-size: 14px;
     border-radius: 0px;
+    position: relative;
 
 }
+
 .clear-cart {
     margin: 0px 5px;
     letter-spacing: 1px;
@@ -184,12 +189,151 @@ img {
 .search-button {
     font-size: 25px;
     background-color: #fff;
-    margin:5px;
+    margin: 5px;
 }
+
 .search-area {
-    margin:5px;
-    width:100%;
+    margin: 5px;
+    width: 100%;
     background-color: #fff;
     border: 1px #eaeaea solid;
-    padding:7px;
+    padding: 7px;
+}
+
+.total-count {
+    background: #131e2c;
+    display: inline-block;
+    color: #fff;
+    width: 28px;
+    border-radius: 999px;
+    font-size: 12px;
+    height: 28px;
+    line-height: 26px;
+    text-align: center;
+    vertical-align: top;
+    margin-top: -7px;
+    position: absolute;
+    font-weight: 700;
+    top: -27px;
+    left: 9px;
+
+}
+
+.fa-shopping-cart {
+    font-size: 40px;
+    background: #fff;
+    color: #80b435;
+}
+
+.modal {
+    background: transparent;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .top-header-area .top-header-content .top-social-area a {
+        margin-right: 15px;
+    }
+    .meNu-Section {
+        display: none;
+    }
+
+    .search-button-area {
+        display: none !important;
+    }
+
+    .clear-cart {
+        display: none !important;
+    }
+
+    .cart-button {
+        position: absolute !important;
+        right: 0;
+        top: -41px;
+    }
+    .total-count {
+        top: -4px;
+    left: 13px;
+    }
+
+
+}
+
+.meNu-Section--mobile {
+    position: absolute;
+    left: 14px;
+    top: -33px;
+    background: transparent;
+}
+
+.fa-bars {
+    font-size: 30px;
+    background: transparent;
+    color: #80b435;
+}
+
+.modal-body {
+    padding:0 !important;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .meNu-Section {
+        display: none;
+    }
+
+    .search-button-area {
+        display: none !important;
+    }
+
+    .clear-cart {
+        display: none !important;
+    }
+
+    .cart-button {
+        position: absolute !important;
+        right: 0;
+        top: -41px;
+    }
+
+}
+
+
+@media screen and (min-width: 992px) {
+    .meNu-Section--mobile {
+        display: none;
+    }
+}
+
+.meNu-wrapper-mobile {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.meNu-Items-mobile {
+    width: 100%;
+    padding-left:5%;
+}
+
+.meNu-Links-mobile {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #80b435;
+    line-height: 50px;
+    letter-spacing: -1.0px;
+}
+
+.meNu-Modal-dialog {
+    height: 100% !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+.meNu-Modal-content {
+    height: 100% !important;
+}
+
+.abc {
+    color:white;
 }

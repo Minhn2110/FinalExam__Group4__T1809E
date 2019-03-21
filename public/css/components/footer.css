@@ -1,0 +1,128 @@
+.newsLetter {
+    background: #1b1e24;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.newsLetter__Wrapper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background: #1b1e24;
+}
+
+.newsLetterTitle {
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    background: #1b1e24;
+}
+
+.newsLetterDiscount {
+    color: #80b435;
+
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+    text-align: center;
+    background: #1b1e24;
+}
+
+.newsLetter__Input--Wrapper {
+    text-align: center;
+    background: #1b1e24;
+}
+
+.newsLetterInput {
+    background: #fff;
+    width: 20%;
+    line-height: 20px;
+    border: 1px solid #e9e7e7;
+    padding-left: 10px;
+    font-family: open sans, sans-serif;
+    padding: 20px;
+    border-radius: 999px;
+    outline: none;
+    
+}
+
+.newsLetterButton {
+    padding: 18px 28px;
+    font-weight: 400;
+    border: none;
+    background: #ed6663;
+    border-radius: 999px;
+    font-family: rubik, sans-serif;
+    color: #fff;
+}
+
+
+
+.footer__Middle {
+    background-color: #252932;
+}
+
+.footer__col--wrapper {
+    background-color: #252932;
+}
+
+.footer__Header {
+    padding: 0 0 18px;
+    padding-top: 50px;
+    font-size: 16px;
+    font-weight: 700 !important;
+    margin: 0;
+    color: #80b435;
+    font-weight: 500;
+    font-family: rubik, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    background-color: #252932;
+
+}
+
+.footer__wrapper {
+    list-style-type: none;
+    padding-left: 0;
+    background-color: #252932;
+
+}
+
+.footer__item {
+    background-color: #252932;
+}
+
+.footer__link {
+    display: block;
+    color: #b7bcc8;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 14px;
+    background-color: #252932;
+
+}
+
+.footer__bottom--wrapper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border-top: 1px rgba(255, 255, 255, .1) solid;
+    background-color: #252932;
+
+}
+
+.footer__bottom {
+    text-align: center;
+    background-color: #252932;
+
+}
+
+.footer__bottom--content {
+    font-size: 13px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+    background-color: #252932;
+    margin-bottom:0;
+
+}

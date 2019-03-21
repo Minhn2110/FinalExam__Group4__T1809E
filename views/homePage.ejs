@@ -9,60 +9,10 @@
 </head>
 
 <body>
-    <% include fixedHeader %>
+    <% include components/fixedHeader %>
+    <% include components/sliderHomePage %>
 
-    <!-- main header -->
-    <div class="main-header container-fluid">
-        <!-- control slider -->
-        <div id="home-slider" class="carousel slide my-carousel" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item img-home-slider active" style="background-image: url(img/slide-img1.jpg); background-size: 100% 100%"
-                    data-img-url="img/slide-img1.jpg">
-                    <div class="container h-100">
-                        <div class="row h-100 align-items-center">
-                            <div class="col-12">
-                                <div class="welcome-text text-center">
-                                    <h2 data-animation="fadeInDown" data-delay="200ms">FRESH LOOK</h2>
-                                    <h2 data-animation="fadeInDown" data-delay="500ms">100% ORGANIC</h2>
-                                    <h6 data-animation="fadeInDown" data-delay="500ms">Farm Fresh Produce Right to
-                                        Your
-                                        Door</h6>
-                                    <a href="#" class="shopnow" data-animation="fadeInDown" data-delay="800ms">Shop
-                                        Now
-                                        ></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item img-home-slider" style="background-image: url(img/slide-img2.jpg) ; background-size: 100% 100%"
-                    data-img-url="img/slide-img2.jpg">
-                    <div class="container h-100">
-                        <div class="row h-100 align-items-center">
-                            <div class="col-12">
-                                <div class="welcome-text text-center">
-                                    <h2 data-animation="fadeInDown" data-delay="200ms">FRESH FOOD</h2>
-                                    <h2 data-animation="fadeInDown" data-delay="500ms">SIMPLY DELICIOUS</h2>
-                                    <h6 data-animation="fadeInDown" data-delay="500ms">We supply highly quality
-                                        organic
-                                        products</h6>
-                                    <a href="#" class="shopnow" data-animation="fadeInDown" data-delay="800ms">Shop
-                                        Now
-                                        ></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#home-slider" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#home-slider" role="button" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
-    </div>
+
 
     <div class="hpCTA">
         <div class="container">
@@ -109,8 +59,8 @@
             </div>
         </div>
     </div>
-    <% include latestNew %>
-    <% include footer %>
+    <% include components/latestNew %>
+    <% include components/footer %>
     <% include common/bottom %>
     <script src="./js/slider.js"></script>
 
