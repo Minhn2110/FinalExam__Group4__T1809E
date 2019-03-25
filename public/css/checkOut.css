@@ -209,3 +209,26 @@ background: #fff;
     }
 }
 
+
+.errorMSG__Wrapper {
+    text-align: center;
+    background: transparent;
+}
+.firstName--msg {
+    background: transparent;
+    color:red;
+    opacity:0;
+}
+.lastName--msg {
+    background: transparent;
+    color:red;
+    opacity:0;
+
+}
+
+.phone--msg {
+    background: transparent;
+    color:red;
+    opacity:0;
+
+}

@@ -29,6 +29,7 @@ var shoppingCart = (function () {
     if (localStorage.getItem("shoppingCart") != null) {
         loadCart();
     }
+    
 
 
     // =============================
@@ -158,7 +159,6 @@ function displayCart() {
     "</tr>" ;
     for (var i in cartArray) {
         output +=
-            // "<thead>" + "<tr>" + "<td>" + "Price" + "</td>" + "</tr>" +"</thead>" +
             "<tr>" +
             "<td scope='col'>" + cartArray[i].name + "</td>" +
             "<td scope='col'>" + cartArray[i].price + "$" + "</td>" +

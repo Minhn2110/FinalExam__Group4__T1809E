@@ -8,11 +8,13 @@
 }
 
 
+.h-100 {
+    background:transparent;
+}
 
-
-
-
-
+.col-12 {
+    background: transparent;
+}
 
 
 .img-home-slider {
@@ -23,6 +25,8 @@
 
 .carousel-item .welcome-text {
     position: relative;
+    background: transparent !important;
+
 }
 
 .carousel-item .welcome-text h6 {
@@ -30,6 +34,8 @@
     letter-spacing: 2px;
     color: #ffffff;
     margin-bottom: 30px;
+    background: transparent !important;
+
 }
 
 .carousel-item .welcome-text h2 {
@@ -37,6 +43,8 @@
     display: block;
     margin-bottom: 30px;
     color: #ffffff;
+    background: transparent !important;
+
 }
 
 
@@ -52,4 +60,12 @@
     text-transform: capitalize;
     background-color: #1cc3b2;
     color: #ffffff;
+}
+
+
+@media screen and (max-width: 767px) {
+    #home-slider {
+        margin-top:33%;
+    }
+    
 }

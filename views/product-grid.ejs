@@ -1,25 +1,22 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <link rel="stylesheet" href="./css/product-grid.css">
     <link rel="stylesheet" href="./css/checkOut.css">
+    <link rel="stylesheet" href="./css/components/global.css">
     <% include common/head %>
 </head>
-
 <body>
     <% include components/fixedHeader %>
-
+    <!-- Small Background -->
     <div class="backgroundProduct">
         <h1 class="page-title">Products</h1>
     </div>
-
-
-
+    <!-- Main Produc Section -->
     <section class="productGrid">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 menuSection">
+                <div class="col-md-4 col-lg-3 menuSection">
                     <div class="col-md-12">
                         <p class="menu_Header">Product Category</p>
                         <ul class="menu_Wrapper">
@@ -78,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-8 col-lg-9">
                     <div class="col-md-12">
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
@@ -90,7 +87,6 @@
                                         <h2 class="slider-header">Vegetable Sale </h2>
                                         <p class="slider-discount">Save 70% on all items</p>
                                     </div>
-
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="http://klbtheme.com/qualis/wp-content/uploads/2018/12/category-img2.jpg"
@@ -115,7 +111,7 @@
 
                     <div class="col-md-12 pGridSection">
                         <% for(var products of productList) { %>
-                        <div class="col-md-4 product-wrapper">
+                        <div class="col-md-4 col-lg-4 product-wrapper">
                             <div class="product-image--wrapper">
                                 <a href="">
                                     <img src="<%= products.image %>" class="product-image"></img>
@@ -151,8 +147,6 @@
             </div>
         </div>
     </section>
-
     <% include components/footer %>
     <% include common/bottom %>
-
 </body>

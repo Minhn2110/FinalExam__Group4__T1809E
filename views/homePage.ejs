@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>project</title>
     <link rel="stylesheet" href="./css/homePage.css">
+    <link rel="stylesheet" href="./css/checkOut.css">
+
     <% include common/head %>
 </head>
 
@@ -37,21 +39,27 @@
                     <h1 class="latestNew__Header">BEST SELLER</h1>
                     <div class="your-class">
                         <% for(var products of productList) { %>
-                        <div class="col-md-4 product-wrapper">
-                            <a href="">
-                                <img src="<%= products.image %>" class="product-image"></img>
-                            </a>
+                        <div class="col-md-4 col-lg-4 product-wrapper">
+                            <div class="product-image--wrapper">
+                                <a href="">
+                                    <img src="<%= products.image %>" class="product-image"></img>
+                                </a>
+                            </div>
                             <div class="product-name">
                                 <%= products.name %>
                             </div>
+                            <div class="product-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                             <div class="product-price">
-                                <%= products.price %>
+                                <%= products.price %> $
                             </div>
-                            <div class="product-button">
-                                <a href="#" data-name="<%= products.name %>" data-price="<%= products.price %>" class="add-to-cart btn btn-primary">Add
-                                    to cart</a>
-                            </div>
-
+                            <a href="#" data-name="<%= products.name %>" data-price="<%= products.price %>"
+                                class="addtocartBTN add-to-cart"></a>
                         </div>
                         <% } %>
                     </div>
