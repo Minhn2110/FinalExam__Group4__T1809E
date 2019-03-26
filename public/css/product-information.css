@@ -1,0 +1,161 @@
+.backgroundProduct {
+    background-size: cover;
+    border-bottom: none;
+    text-align: center;
+    background-repeat: no-repeat;
+    background: url("http://klbtheme.com/qualis/wp-content/uploads/2018/12/category-bg.jpg");
+    padding: 165px 0 50px;
+}
+
+.page-title {
+    color: #fff;
+    font-family: oswald, sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 25px;
+    text-align: center;
+    background: transparent;
+}
+
+.page-path {
+    color:white;
+    background: transparent;
+}
+
+.page-path strong {
+    color: #80b435;
+    background: transparent;
+    font-weight:400;
+
+}
+
+.piSection {
+    padding-top: 5%;
+}
+
+.piCol-wrapper {
+    background: white;
+}
+
+.slick-list {
+    background: white;
+}
+
+.piBig__Image div {
+    background: white;
+
+}
+
+.slick-slide {
+    outline: none;
+}
+
+.piSlider__Image {
+    padding-top: 5%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background: white;
+
+}
+
+.piSlider__Image div {
+    margin: 5px;
+    background: white;
+    outline: none;
+}
+
+.piLarge__Image {}
+
+.piSmall__Image {
+    border: 1px #e5e5e5 solid;
+}
+
+.pi__Name h1 {
+    font-size: 34px;
+    margin: 0 0 2px;
+    text-align: left;
+    padding-bottom: 12px;
+    letter-spacing: normal;
+    font-weight: 700;
+    font-family: rubik, sans-serif;
+    text-transform: uppercase;
+    background: white;
+    padding-top: 20px;
+}
+
+.pi__Rating {
+    padding: 0 0 18px;
+    margin: auto;
+    border-bottom: 1px #ddd dotted;
+    color: #80b435;
+    background: white;
+
+
+}
+
+.pi__Rating span {
+    background: white;
+
+}
+
+.pi__Rating span i {
+    background: white;
+    letter-spacing:-4px;
+
+}
+
+.pi__Rating span a {
+    background: white;
+    color: #6dbe14;
+
+
+}
+
+.pi__stock {
+    color: #6dbe14;
+    font-size: 13px;
+    line-height: 16px;
+    display: inline-block;
+    border: 2px #6dbe14 solid;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 1%;
+}
+
+.pi__price {
+    color: #333e48;
+    font-weight: 500;
+    font-size: 30px;
+    background: white;
+    padding-left: 2%;
+}
+
+.pi__button {
+    background: #ed6663;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: none;
+    padding: 16px 30px;
+    font-weight: 500;
+    border: none;
+    border-radius: 999px;
+}
+
+.pi__description--wrapper {
+    padding-top: 7%;
+    border-bottom: 1px #ddd dotted;
+    background: white;
+
+}
+
+.pi__description {
+    width: 100%;
+    line-height: 1.9em;
+    margin-bottom: 30px;
+    background: white;
+
+}

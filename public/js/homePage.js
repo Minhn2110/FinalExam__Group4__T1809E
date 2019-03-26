@@ -4,7 +4,7 @@ $('.your-class').slick({
     infinite: false,
     speed: 300,
     autoplay:true,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 3,
     responsive: [
       {
@@ -35,3 +35,13 @@ $('.your-class').slick({
       // instead of a settings object
     ]
   });
+
+  // $(window).scroll(function() {
+  //   if ($(this).scrollTop() > 1){  
+  //     $('.container').addClass("container-fluid");
+  //   }
+  //   else {
+  //     $('.abc').removeClass("container");
+  //     $('.abc').addClass("container-fluid");
+  //   }
+  // });

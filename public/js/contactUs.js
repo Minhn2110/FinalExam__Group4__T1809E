@@ -1,8 +1,11 @@
 var map;
 var inputName = document.getElementsByName('inputName');
 var btnSubmit = document.querySelectorAll('btnSubmit');
-const inputEmail = document.getElementsByName('inputEmail')
-const inputSubject = document.getElementsByName('inputSubject')
+const inputEmail = document.getElementsByName('inputEmail');
+const inputSubject = document.getElementsByName('inputSubject');
+var yourName = document.getElementById('yourName');
+var yourEmail = document.getElementById('yourEmail');
+
 
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
@@ -55,7 +58,79 @@ function changeColorInputSubject() {
   }
 };
 
+$('#contactForm').focusout(function () {
+  check_yourname();
+  check_email();
+  $(".inputname").animate({
+    opacity: "1"
+  }, 2000)
+  $(".emailmsg").animate({
+    opacity: "1"
+  }, 2000)
+  // check_phoneNumber();
+  // $(".firstName--msg").animate({
+  //     opacity: "1"
+  // }, 2000)
+  // $(".lastName--msg").animate({
+  //     opacity: "1"
+  // }, 2000)
+  // $(".phone--msg").animate({
+  //     opacity: "1"
+  // }, 2000)
+  // checkNull();
+});
+
+function check_yourname() {
+  if (yourName.value.length === 0) {
+    $(".inputname").html(" Your Name is required");
+    return false;
+  } else if (yourName.value.length < 3 || yourName.value.length > 20) {
+    $(".inputname").html(" Your Name should be between 4 - 20 characters");
+    $(".inputname").show();
+    return false;
+  } else {
+    $(".inputname").hide();
+    return true;
+  }
+}
+
+function check_email() {
+  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (yourEmail.value.length === 0) {
+    $(".emailmsg").html(" Email is required");
+    return false;
+  } else if (yourEmail.value.match(mailformat)) {
+    $(".emailmsg").hide();
+    return true;
+  } else {
+    $(".emailmsg").html(" Wrong Format Email");
+    $(".emailmsg").show();
+    return false;
+  }
+}
+
+function formCheck() {
+
+  if (check_yourname() && check_email()) {
+    alert("Success");
+
+    var contactFormData = {
+      Name: yourName.value,
+      Email: yourEmail.value
+    }
+
+    var contactUsFormData = JSON.stringify(contactFormData);
+    localStorage.setItem("Contact Us", contactUsFormData);
+    var getcontactUsFormData = JSON.parse(window.localStorage.getItem("Contact Us"));
+    // var getData = JSON.parse(localStorage.getItem('shoppingCart'));
+    // getData.push(abc);
+    console.log(getcontactUsFormData);
+    // localStorage.setItem("Orderrs", getData);
+  } else {
+    alert("FALSE");
+  }
+}
+
 // btnSubmit[0].addEventListener('click', function () {
 //   btnSubmit[0].style.backgroundColor = "orange";
 // });
-

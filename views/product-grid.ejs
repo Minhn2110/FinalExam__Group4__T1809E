@@ -11,6 +11,11 @@
     <!-- Small Background -->
     <div class="backgroundProduct">
         <h1 class="page-title">Products</h1>
+        <p class="page-path"> Home ›
+                <strong>
+                    Products
+                </strong>
+            </p>
     </div>
     <!-- Main Produc Section -->
     <section class="productGrid">
@@ -111,9 +116,9 @@
 
                     <div class="col-md-12 pGridSection">
                         <% for(var products of productList) { %>
-                        <div class="col-md-4 col-lg-4 product-wrapper">
+                        <div class=" col-md-4 col-lg-4 product-wrapper">
                             <div class="product-image--wrapper">
-                                <a href="">
+                                <a href="product-information">
                                     <img src="<%= products.image %>" class="product-image"></img>
                                 </a>
                             </div>

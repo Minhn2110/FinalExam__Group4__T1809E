@@ -24,10 +24,23 @@
     background: transparent;
 }
 
+.page-path {
+    color:white;
+    background: transparent;
+}
+
+.page-path strong {
+    color: #80b435;
+    background: transparent;
+    font-weight:400;
+
+}
+
 .productGrid {
     padding-top: 5%;
     padding-bottom: 5%;
 }
+
 
 .menu_Wrapper {
     background-color: #ffff;
@@ -276,7 +289,7 @@
 
 .product-image:hover {
     transform: scale(1.8);
-    transition: all .4s ease-out;
+    transition: all .8s ease-out;
 }
 
 
@@ -299,7 +312,7 @@
     opacity: 0;
     text-decoration: none !important;
     top: 50%;
-    left: 36%;
+    left: 40%;
 }
 
 .product-wrapper:hover .addtocartBTN {
@@ -345,6 +358,18 @@
     #carouselExampleControls {
         display: none;
     }
+
+    .addtocartBTN {
+        top: 62%;
+        left: 41%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px)  {
+    .addtocartBTN {
+        top: 46%;
+        left: 30%;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -352,4 +377,10 @@
         top: 65%;
         left: 12%;
     }
+
+    .addtocartBTN {
+        top: 55%;
+        left: 35%;
+    }
+
 }

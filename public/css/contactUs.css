@@ -30,10 +30,21 @@ body {
 
 }
 
+.page-path {
+  color:white;
+  background: transparent;
+}
+
+.page-path strong {
+  color: #80b435;
+  background: transparent;
+  font-weight:400;
+
+}
+
 .google__map {
   width: 100%;
   padding-top: 5%;
-  background: #f5f5f5;
 }
 .google__map #map {
   height: 450px;
@@ -42,7 +53,6 @@ body {
 
 .juiceForm {
   padding-top: 3%;
-  background: #f5f5f5;
 }
 
 .juiceForm__header--style {
@@ -58,6 +68,7 @@ body {
 
 .juiceForm__col {
   float: left;
+  padding-bottom: 20px;
 }
 .juiceForm__col__label {
   width: 100%;
@@ -194,3 +205,19 @@ body {
   top: 15px;
 }
 
+
+.errorContactmsg--wrapper {
+  text-align: center;
+  background: transparent;
+}
+.inputname {
+  background: transparent;
+  color:red;
+  opacity:0;
+}
+.emailmsg {
+  background: transparent;
+  color:red;
+  opacity:0;
+
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/product-information.css">
+    <link rel="stylesheet" href="./css/components/global.css">
+    <link rel="stylesheet" href="./css/checkOut.css">
+
+    <% include common/head %>
+</head>
+
+<body>
+    <% include components/fixedHeader %>
+    <div class="backgroundProduct">
+        <h1 class="page-title">Products</h1>
+        <p class="page-path"> Home › Products ›
+            <strong>
+                Fresh Organic Mustard Leaves
+            </strong>
+        </p>
+    </div>
+
+    <div class="piSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 piCol-wrapper">
+                    <div class="piImage-Box">
+                        <div class="piBig__Image slider-for">
+                            <div><img src="img/Eastern-Sunset.jpg" alt="" class="piLarge__Image"></div>
+                            <div><img src="img/Spinack.jpg" alt="" class="piLarge__Image"></div>
+                            <div><img src="img/the Other Beet One.jpg" alt="" class="piLarge__Image"></div>
+                        </div>
+                        <div class="piSlider__Image slider-nav col-md-12">
+                            <div><img src="img/Eastern-Sunset.jpg" alt="" class="piSmall__Image"></div>
+                            <div><img src="img/Spinack.jpg" alt="" class="piSmall__Image"></div>
+                            <div><img src="img/the Other Beet One.jpg" alt="" class="piSmall__Image"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 piCol-wrapper">
+                    <div class="pi__Name">
+                        <h1>Fresh Organic Mustard Leaves</h1>
+                    </div>
+                    <div class="pi__Rating">
+                        <span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <a href="">( 1 customer reviews )</a>
+                        </span>
+                    </div>
+                    <p class="pi__stock">9 in stock</p>
+                    <p class="pi__price">5.99 $</p>
+                    <a href="#" data-name="Fresh Organic Mustard Leaves" data-price="5.99"
+                        class="pi__button add-to-cart">ADD TO CART</a>
+                    <div class="pi__description--wrapper">
+                        <p class="pi__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                            fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi
+                            ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu,
+                            suscipit id nulla. Donec a neque libero.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <% include components/latestNew %>
+    <% include components/footer %>
+    <% include common/bottom %>
+</body>

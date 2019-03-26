@@ -11,7 +11,6 @@ var shoppingCart = (function () {
     // Constructor
     function Item(name, price, count) {
         this.name = name;
-        console.log(name);
         this.price = price;
         this.count = count;
     }
@@ -188,9 +187,6 @@ $('.clear-cart').click(function () {
     shoppingCart.clearCart();
     displayCart();
 });
-
-
-
 
 // Delete item button
 

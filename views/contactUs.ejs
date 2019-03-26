@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./css/contactUs.css">
+    <!-- <link rel="stylesheet" href="./css/components/global.css"> -->
+
     <% include common/head %>
 </head>
 
@@ -14,6 +16,11 @@
 
     <div class="backgroundProduct">
         <h1 class="page-title">Contact Us</h1>
+        <p class="page-path"> Home ›
+                <strong>
+                    Contact Us
+                </strong>
+            </p>
     </div>
     <section class="google__map">
         <div class="container">
@@ -36,28 +43,38 @@
                     <div class="col-md-12 juiceForm__header">
                         <p class="juiceForm__header--style">Contact Us</p>
                     </div>
-                    <form action="#">
+                    <form id="contactForm" action="#">
                         <div class="col-md-6 juiceForm__col">
                             <label class="juiceForm__label">Your Name (required)</label>
-                            <input type="text" class="juiceForm__col--inputtext" name="inputName" onkeyup="changeColorInputName()"
-                                required>
+                            <input type="text" class="juiceForm__col--inputtext" name="inputName" id="yourName"
+                                onkeyup="changeColorInputName()">
+                            <div class="errorContactmsg--wrapper">
+                                <span class="inputname"></span>
+
+                            </div>
                         </div>
                         <div class="col-md-6 juiceForm__col">
                             <label class="juiceForm__label"> Your Email (required)</label>
-                            <input type="email" class="juiceForm__col--inputtext" name="inputEmail" oninput="changeColorInputEmail()"
-                                required>
+                            <input type="email" class="juiceForm__col--inputtext" name="inputEmail" id="yourEmail"
+                                oninput="changeColorInputEmail()">
+                            <div class="errorContactmsg--wrapper">
+                                <span class="emailmsg"></span>
+
+                            </div>
+
                         </div>
                         <div class="col-md-12 juiceForm__col">
                             <label class="juiceForm__label"> Subject</label>
-                            <input type="text" class="juiceForm__col--inputtext" name="inputSubject" oninput="changeColorInputSubject()"
-                                required>
+                            <input type="text" class="juiceForm__col--inputtext" name="inputSubject"
+                                oninput="changeColorInputSubject()">
                         </div>
                         <div class="col-md-12 juiceForm__col">
                             <label class="juiceForm__label"> Your Message</label>
                             <input type="textarea" class="juiceForm__col--inputtextarea">
                         </div>
                         <div class="col-md-12 juiceForm__button--wrapper">
-                            <button class="juiceForm__button--style" name="btnSubmit" type="submit"> Submit </button>
+                            <button class="juiceForm__button--style" name="btnSubmit" type="button"
+                                onclick='formCheck()'> Submit </button>
                         </div>
                     </form>
                 </div>
@@ -80,7 +97,7 @@
     </section>
 
 
-    <section class="contactUs__Slogan">
+    <!-- <section class="contactUs__Slogan">
         <div class="container">
             <div class="row">
                 <div class="col-md-9 col-xs-12">
@@ -109,7 +126,8 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+    <% include components/latestNew %>
     <% include components/footer %>
     <% include common/bottom %>
 </body>

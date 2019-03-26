@@ -206,6 +206,7 @@ app.get("/homePage", function (request, response) {
 	response.render("homePage", {
 		itemList,
 		productList,
+		productListTwo,
 		footerListOne,
 		footerListTwo,
 		footerListThree,
@@ -271,7 +272,8 @@ app.get("/contactUs", function (request, response) {
 	response.render("contactUs", {
 		footerListOne,
 		footerListTwo,
-		footerListThree
+		footerListThree,
+		latestNew
 	});
 });
 
@@ -297,6 +299,16 @@ app.get("/aboutUs", function (request, response) {
 
 app.get("/checkOut", function (request, response) {
 	response.render("checkOut", {
+		footerListOne,
+		footerListTwo,
+		footerListThree,
+		latestNew
+	});
+});
+
+
+app.get("/product-information", function (request, response) {
+	response.render("product-information", {
 		footerListOne,
 		footerListTwo,
 		footerListThree,

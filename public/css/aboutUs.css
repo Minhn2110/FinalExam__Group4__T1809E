@@ -27,6 +27,18 @@
 
 }
 
+.page-path {
+    color:white;
+    background: transparent;
+}
+
+.page-path strong {
+    color: #80b435;
+    background: transparent;
+    font-weight:400;
+
+}
+
 .aboutUs {
     padding-top:5%;
     padding-bottom:5%;
