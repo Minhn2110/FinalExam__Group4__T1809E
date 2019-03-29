@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ADMIN</title>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700, 600,500,400,300' rel='stylesheet'
+        type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="./css/admin-page.css">
+    <% include common/head %>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script language="javascript" src="./js/admin.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <i class="fas fa-tachometer-alt"></i>
+            <span>Dashbroad</span>
+        </div>
+        <a href="#" class="nav-trigger"><span></span></a>
+    </div>
+    <div class="side-nav">
+        <div class="logo">
+            <i class="fas fa-tachometer-alt"></i>
+            <span>Dashbroad</span>
+        </div>
+        <nav>
+            <ul class="tabs">
+                <li>
+                    <a href="#tab1">
+                        <span><i class="fab fa-product-hunt"></i></span>
+                        <span>Product</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#tab2">
+                        <span><i class="fas fa-plus-circle"></i></span>
+                        <span>Add product</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#tab3">
+                        <span><i class="fas fa-users"></i></span>
+                        <span>Customer</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#tab4">
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                        <span>Order</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content secciones">
+        <article id="tab1">
+            <div class="table">
+                <table class="table  table-customize table-responsive1 table-responsive{-sm|-md|-lg|-xl}">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Thumbnail</th>
+                            <th>Product name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(var products of productList) { %>
+                        <tr>
+                            <td data-title="ID"><%= products.id%></td>
+                            <td data-title="Thumbnail"><img src="<%= products.image %>" alt="">
+                            </td>
+                            <td data-title="Product name"><%= products.name %></td>
+                            <td data-title="Price"><span class="Price-amount ">
+                                    <span class="Price-currencySymbol">
+                                        £
+                                    </span>
+                                    <%= products.price %>
+                                </span></td>
+                                <td><%= products.quantity %></td>
+                            <td data-title="edit">
+                                <a href="#editModal" data-toggle="modal"><i class="far fa-edit"></i></a>
+                                <a href="/remove/<%=products.id%>"><i class="far fa-trash-alt"></i></a>
+                            </td>
+                        </tr>
+                        <div id="editModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3>Edit</h3>
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            aria-hidden="true">×</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="form" action="/edit" role="form" autocomplete="off" id="formEdit" method="POST">
+                                            <div class="form-group">
+                                                <label for="name">Name product</label>
+                                                <input type="text" class="form-control form-control-lg" name="name"
+                                                    id="name" required >
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Price</label>
+                                                <input type="number" name="price" class="form-control form-control-lg " min="1" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Quantity</label>
+                                                <input type="number" name="quantity" class="form-control form-control-lg " min="1" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleFormControlTextarea1">Short Description</label>
+                                                <textarea class="form-control" minlength="50" name="shortDescription" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="exampleFormControlTextarea1">Detailed description</label>
+                                                <textarea class="form-control"  minlength="200" name="detailedDescription" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                                              </div>
+                                            <div class="custom-file">
+                                                <input type="file" name="avatar" class="custom-file-input" id="validatedCustomFile" required>
+                                                <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                                            </div>
+                                            <div class="form-group py-4">
+                                                <button class="btn btn-outline-secondary text-light bg-danger btn-lg" data-dismiss="modal"
+                                                    aria-hidden="true">Cancel</button>
+                                                <button type="submit" class="btn btn-success btn-lg float-right">Submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <%}%>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+        <article id="tab2">
+            <div class="form-add">
+                <form id="validationForm" action="/addproduct" method="post" enctype="multipart/form-data">
+                    <div class="form-group ">
+                            <label for="inputProductName">Product name</label>
+                            <input type="text" class="form-control" name="name" id="inputProductName"
+                                placeholder="Product name" required>
+                        </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputQuantity">Quantity</label>
+                            <input class="form-control" min="1" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+" name="quantity" id="inputQuantity" type="number" placeholder="Quantity" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPrice">Price</label>
+                            <input class="form-control" min="1" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+" name="price" id="inputPrice" type="number" placeholder="Price" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormShortDescription">Short Description</label>
+                        <textarea class="form-control" minlength="50" name="shortDescription" id="exampleFormShortDescription"
+                            rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormDetailedDescription">Detailed description</label>
+                        <textarea class="form-control" name="detailedDescription" id="exampleFormDetailedDescription"
+                            rows="3" minlength="200" required></textarea>
+                    </div>
+                    <div class="custom-file form-group">
+                        <input type="file" class="custom-file-input" name="avatar" id="customFile" required>
+                        <label class="custom-file-label" for="customFile">Choose file thumbnail</label>
+                    </div>
+                    <div class="form-btn">
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </div>
+                </form>
+            </div>
+        </article>
+        <article id="tab3">
+            <div>
+                <table class="table  table-customize table-responsive1 table-responsive{-sm|-md|-lg|-xl}">
+                    <thead>
+                        <tr>
+                            <th>Name </th>
+                            <th>&nbsp;</th>
+                            <th>Email</th>
+                            <th>Phone number</th>
+                            <th>Address</th>
+                            <th>Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(var customer of customers) { %>
+                        <tr>
+                            <td data-title="Name"><%=customer.name%></td>
+                            <td data-title="avatar" class="avtCustomer">
+                                <img src="<%=customer.avatar%>" alt="">
+                            </td>
+                            <td data-title="Email">
+                                <%=customer.email%>
+                            </td>
+                            <td data-title="Phone number">
+                                <%=customer.phoneNumber%>
+                            </td>
+                            <td data-title="Address">
+                               <%=customer.address%>
+                            </td>
+                            <td data-title="Gender">
+                                <%=customer.gender%>
+                            </td>
+                        </tr>
+                        <%}%>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+        <article id="tab4">
+            <div>
+                <table class="table  table-customize table-responsive1 table-responsive{-sm|-md|-lg|-xl}">
+                    <thead>
+                        <tr class="bg">
+                            <td>
+                                Name customer :
+                            </td>
+                            <td>
+                                Belinda Anderson
+                            </td>
+                            <td>
+                                Phone: 7015559098
+                            </td>
+                            <td>
+                                email: belinda@gmail.com
+                            </td>
+                            <td class="avtCustomer2">
+                                <img src="./uploads/5d564f6efedd4a4dd608bab877f5d93e" alt="">
+                            </td>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <th>Thumbnail</th>
+                            <th>&nbsp;</th>
+                            <th>Product name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg rp">
+                            <td>
+                                Name customer : Belinda Anderson
+                            </td>
+                            <td>
+                                Phone: 7015559098
+                            </td>
+                            <td>
+                                email: belinda@gmail.com
+                            </td>
+                            <td class="avtCustomer2">
+                                <img src="./uploads/5d564f6efedd4a4dd608bab877f5d93e" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-title="Product thumbnail"><img
+                                    src="./uploads/e37bf0647086e229c4ec66be6b627ea9" alt="">
+                            </td>
+                            <td>&nbsp;</td>
+                            <td data-title="Product name">Orange</td>
+                            <td data-title="Price"><span class="Price-amount ">
+                                    <span class="Price-currencySymbol">
+                                        £
+                                    </span>
+                                    5.99
+                                </span></td>
+                            <td data-title="Quantyti">4</td>
+                             <td data-title="Total">23.96</td>
+                            </tr>
+                            <tr>
+                            <td data-title="Product thumbnail"><img
+                                    src="./uploads/508be97c35e87b93cc01ee48facc91ec" alt="">
+                            </td>
+                            <td>&nbsp;</td>
+                            <td data-title="Product name">Grape</td>
+                            <td data-title="Price"><span class="Price-amount ">
+                                    <span class="Price-currencySymbol">
+                                        £
+                                    </span>
+                                    6.99
+                                </span></td>
+                            <td data-title="Quantyti">2</td>
+                             <td data-title="Total">13.98</td>
+                            </tr>
+                        <tr class="bg">
+                            <td>Totals: 37.94</td>
+                            <td class="rps">&nbsp;</td>
+                            <td >Status: successful delivery</td>
+                            <td class="rps">&nbsp;</td>
+                            <td class="rps">&nbsp;</td>
+                            <td class="rps">&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="divide"><hr></div>
+                <table class="table  table-customize table-responsive1 table-responsive{-sm|-md|-lg|-xl}">
+                    <thead>
+                        <tr class="bg">
+                            <td>
+                                Name customer :
+                            </td>
+                            <td>
+                                Carley Boehm
+                            </td>
+                            <td>
+                                Phone: 7015557889
+                            </td>
+                            <td>
+                                email: ccboehm@gmail.com
+                            </td>
+                            <td class="avtCustomer2">
+                                <img src="./uploads/1887158d6710e0a4cd8aceeef7a5b798" alt="">
+                            </td>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <th>Thumbnail</th>
+                            <th>&nbsp;</th>
+                            <th>Product name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg rp">
+                            <td>
+                                Name customer : Carley Boehm
+                            </td>
+                            <td>
+                                Phone: 7015557889
+                            </td>
+                            <td>
+                                email: ccboehm@gmail.com
+                            </td>
+                            <td class="avtCustomer2">
+                                <img src="./uploads/1887158d6710e0a4cd8aceeef7a5b798" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-title="Product thumbnail"><img
+                                    src="./uploads/e37bf0647086e229c4ec66be6b627ea9" alt="">
+                            </td>
+                            <td>&nbsp;</td>
+                            <td data-title="Product name">Orange</td>
+                            <td data-title="Price"><span class="Price-amount ">
+                                    <span class="Price-currencySymbol">
+                                        £
+                                    </span>
+                                    5.99
+                                </span></td>
+                            <td data-title="Quantyti">4</td>
+                             <td data-title="Total">23.96</td>
+                            </tr>
+                            <tr>
+                            <td data-title="Product thumbnail"><img
+                                    src="./uploads/b7c6081ed03921171a9eac5227c9eb19" alt="">
+                            </td>
+                            <td>&nbsp;</td>
+                            <td data-title="Product name">Carrot</td>
+                            <td data-title="Price"><span class="Price-amount ">
+                                    <span class="Price-currencySymbol">
+                                        £
+                                    </span>
+                                    7.99
+                                </span></td>
+                            <td data-title="Quantyti">2</td>
+                             <td data-title="Total">15.98</td>
+                            </tr>
+                            <tr>
+                            <td data-title="Product thumbnail"><img
+                                    src="./uploads/c39cc8834b529f3651a05dd573b48fcf" alt="">
+                            </td>
+                            <td>&nbsp;</td>
+                            <td data-title="Product name">Cucumber</td>
+                            <td data-title="Price"><span class="Price-amount ">
+                                    <span class="Price-currencySymbol">
+                                        £
+                                    </span>
+                                    7.99
+                                </span></td>
+                            <td data-title="Quantyti">1</td>
+                             <td data-title="Total">14.99</td>
+                            </tr>
+                        <tr class="bg">
+                            <td>Totals: 54.93</td>
+                            <td class="rps">&nbsp;</td>
+                            <td >Status: delivery</td>
+                            <td class="rps">&nbsp;</td>
+                            <td class="rps">&nbsp;</td>
+                            <td class="rps">&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="divide"><hr></div>
+                 <table class="table  table-customize table-responsive1 table-responsive{-sm|-md|-lg|-xl}">
+                    <thead>
+                        <tr class="bg">
+                            <td>
+                                Name customer :
+                            </td>
+                            <td>
+                                Cristina Andres
+                            </td>
+                            <td>
+                                Phone: 4155552174
+                            </td>
+                            <td>
+                                email: candresm@gmail.com
+                            </td>
+                            <td class="avtCustomer2">
+                                <img src="./uploads/dd14e5cc79d0094fa6021b36f957d1e2" alt="">
+                            </td>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <th>Thumbnail</th>
+                            <th>&nbsp;</th>
+                            <th>Product name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg rp">
+                            <td>
+                                Name customer : Cristina Andres
+                            </td>
+                            <td>
+                                Phone: 4155552174
+                            </td>
+                            <td>
+                                email: candresm@gmail.com
+                            </td>
+                            <td class="avtCustomer2">
+                                <img src="./uploads/dd14e5cc79d0094fa6021b36f957d1e2" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-title="Product thumbnail"><img
+                                    src="./uploads/758ae056b4eccf75595a3347f13f84a8" alt="">
+                            </td>
+                            <td>&nbsp;</td>
+                            <td data-title="Product name">Tomatoes</td>
+                            <td data-title="Price"><span class="Price-amount ">
+                                    <span class="Price-currencySymbol">
+                                        £
+                                    </span>
+                                    6.99
+                                </span></td>
+                            <td data-title="Quantyti">4</td>
+                             <td data-title="Total">27.96</td>
+                            </tr>
+                            <tr>
+                            <td data-title="Product thumbnail"><img
+                                    src="./uploads/e65616378ea9e86c7d87ba2ad6a3a89f" alt="">
+                            </td>
+                            <td>&nbsp;</td>
+                            <td data-title="Product name">Pepper</td>
+                            <td data-title="Price"><span class="Price-amount ">
+                                    <span class="Price-currencySymbol">
+                                        £
+                                    </span>
+                                    9.99
+                                </span></td>
+                            <td data-title="Quantyti">2</td>
+                             <td data-title="Total">19.98</td>
+                            </tr>
+                            <tr>
+                            <td data-title="Product thumbnail"><img
+                                    src="./uploads/c39cc8834b529f3651a05dd573b48fcf" alt="">
+                            </td>
+                            <td>&nbsp;</td>
+                            <td data-title="Product name">Cucumber</td>
+                            <td data-title="Price"><span class="Price-amount ">
+                                    <span class="Price-currencySymbol">
+                                        £
+                                    </span>
+                                    7.99
+                                </span></td>
+                            <td data-title="Quantyti">1</td>
+                             <td data-title="Total">14.99</td>
+                            </tr>
+                        <tr class="bg">
+                            <td>Totals: 62.93</td>
+                            <td class="rps">&nbsp;</td>
+                            <td >Status: delivery</td>
+                            <td class="rps">&nbsp;</td>
+                            <td class="rps">&nbsp;</td>
+                            <td class="rps">&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="divide"><hr></div>
+                 <table class="table  table-customize table-responsive1 table-responsive{-sm|-md|-lg|-xl}">
+                    <thead>
+                        <tr class="bg">
+                            <td>
+                                Name customer :
+                            </td>
+                            <td>
+                                Darwin Branson
+                            </td>
+                            <td>
+                                Phone: 7015553457
+                            </td>
+                            <td>
+                                email: dbransonm@gmail.com
+                            </td>
+                            <td class="avtCustomer2">
+                                <img src="./uploads/8e546038bc86e9529e1dfc7bb52661ff" alt="">
+                            </td>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <th>Thumbnail</th>
+                            <th>&nbsp;</th>
+                            <th>Product name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg rp">
+                            <td>
+                                Name customer : Darwin Branson
+                            </td>
+                            <td>
+                                Phone: 7015553457
+                            </td>
+                            <td>
+                                email: dbransonm@gmail.com
+                            </td>
+                            <td class="avtCustomer2">
+                                <img src="./uploads/8e546038bc86e9529e1dfc7bb52661ff" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-title="Product thumbnail"><img
+                                    src="./uploads/758ae056b4eccf75595a3347f13f84a8" alt="">
+                            </td>
+                            <td>&nbsp;</td>
+                            <td data-title="Product name">Tomatoes</td>
+                            <td data-title="Price"><span class="Price-amount ">
+                                    <span class="Price-currencySymbol">
+                                        £
+                                    </span>
+                                    6.99
+                                </span></td>
+                            <td data-title="Quantyti">4</td>
+                             <td data-title="Total">27.96</td>
+                            </tr>
+                            <tr>
+                            <td data-title="Product thumbnail"><img
+                                    src="./uploads/e65616378ea9e86c7d87ba2ad6a3a89f" alt="">
+                            </td>
+                            <td>&nbsp;</td>
+                            <td data-title="Product name">Pepper</td>
+                            <td data-title="Price"><span class="Price-amount ">
+                                    <span class="Price-currencySymbol">
+                                        £
+                                    </span>
+                                    9.99
+                                </span></td>
+                            <td data-title="Quantyti">2</td>
+                             <td data-title="Total">19.98</td>
+                            </tr>
+                            <tr>
+                            <td data-title="Product thumbnail"><img
+                                    src="./uploads/e37bf0647086e229c4ec66be6b627ea9" alt="">
+                            </td>
+                            <td>&nbsp;</td>
+                            <td data-title="Product name">Orange</td>
+                            <td data-title="Price"><span class="Price-amount ">
+                                    <span class="Price-currencySymbol">
+                                        £
+                                    </span>
+                                    5.99
+                                </span></td>
+                            <td data-title="Quantyti">4</td>
+                             <td data-title="Total">23.96</td>
+                            </tr>
+                            <tr>
+                            <td data-title="Product thumbnail"><img
+                                    src="./uploads/c81eb806f55f7bbb3b81f6ec0114820d" alt="">
+                            </td>
+                            <td>&nbsp;</td>
+                            <td data-title="Product name">Apple</td>
+                            <td data-title="Price"><span class="Price-amount ">
+                                    <span class="Price-currencySymbol">
+                                        £
+                                    </span>
+                                    14.99
+                                </span></td>
+                            <td data-title="Quantyti">5</td>
+                             <td data-title="Total">74.95</td>
+                            </tr>
+                            <tr>
+                            <td data-title="Product thumbnail"><img
+                                    src="./uploads/8b4f509a2bf7e39769ffaa06fa79a525" alt="">
+                            </td>
+                            <td>&nbsp;</td>
+                            <td data-title="Product name">Strawberry</td>
+                            <td data-title="Price"><span class="Price-amount ">
+                                    <span class="Price-currencySymbol">
+                                        £
+                                    </span>
+                                    16.99
+                                </span></td>
+                            <td data-title="Quantyti">5</td>
+                             <td data-title="Total">84.95</td>
+                            </tr>
+                        <tr class="bg">
+                            <td>Totals: 203.84</td>
+                            <td class="rps">&nbsp;</td>
+                            <td >Status: delivery</td>
+                            <td class="rps">&nbsp;</td>
+                            <td class="rps">&nbsp;</td>
+                            <td class="rps">&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.nav-trigger').click(function () {
+                $('.side-nav').toggleClass('visible');
+            });
+        });</script>
+</body>
+
+</html>

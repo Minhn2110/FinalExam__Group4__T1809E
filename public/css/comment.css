@@ -1,0 +1,53 @@
+.body {
+  background-color: #333333;
+}
+.carousel-item {
+  text-align: center;
+}
+.carousel-content {
+    color:black;
+    display:flex;
+    font-size: 25px;
+    width: 70%;
+    margin: auto;
+}
+.carousel-content img {
+   border-radius: 50%;
+   width: 25%;
+   height: auto;
+}
+#text-carousel {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
+.carousel-item {
+  text-align: center;
+  margin: 0 auto;
+}
+.carousel-control-prev-icon {
+    width: 25px !important;
+    height: 25px !important;
+    left: -38% !important;
+    position: relative !important;
+    background-color: black !important;
+}
+
+.carousel-control-next-icon {
+    width: 25px !important;
+    height: 25px !important;
+    right: -38% !important;
+    position: relative !important;
+    background-color: black !important;
+}
+.clients_author {
+  color: #80b435;
+  font-size: 20px;
+}
+.clients_author span {
+    font-size: 20px;
+    font-family: rubik,sans-serif;
+    font-weight: 400;
+    color: #777;
+    display: inline-block;
+    margin-left: 7px;

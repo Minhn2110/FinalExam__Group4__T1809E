@@ -3,9 +3,9 @@
 
 <head>
     <link rel="stylesheet" href="./css/product-information.css">
-    <link rel="stylesheet" href="./css/components/global.css">
+    <link rel="stylesheet" href="./css/components/latestNew.css">
     <link rel="stylesheet" href="./css/checkOut.css">
-
+    <link rel="stylesheet" href="./css/components/global.css">
     <% include common/head %>
 </head>
 
@@ -37,9 +37,10 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-md-7 piCol-wrapper">
                     <div class="pi__Name">
-                        <h1>Fresh Organic Mustard Leaves</h1>
+                        <h1><%= productList.name %></h1>
                     </div>
                     <div class="pi__Rating">
                         <span>
@@ -52,7 +53,7 @@
                         </span>
                     </div>
                     <p class="pi__stock">9 in stock</p>
-                    <p class="pi__price">5.99 $</p>
+                    <p class="pi__price"><%= productList.price %></p>
                     <a href="#" data-name="Fresh Organic Mustard Leaves" data-price="5.99"
                         class="pi__button add-to-cart">ADD TO CART</a>
                     <div class="pi__description--wrapper">
@@ -61,7 +62,7 @@
                             ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu,
                             suscipit id nulla. Donec a neque libero.</p>
                     </div>
-
+                    
                 </div>
             </div>
         </div>

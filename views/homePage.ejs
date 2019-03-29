@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/checkOut.css">
     <link rel="stylesheet" href="./css/components/global.css">
 
-
     <% include common/head %>
 </head>
 
@@ -43,7 +42,7 @@
                         <% for(var products of productListTwo) { %>
                         <div class="col-md-4 col-lg-4 product-wrapper">
                             <div class="product-image--wrapper">
-                                <a href="">
+                                <a href="/search-product/">
                                     <img src="<%= products.image %>" class="product-image"></img>
                                 </a>
                             </div>
@@ -69,6 +68,8 @@
             </div>
         </div>
     </div>
+    <% include countdowntimer %>
+    <% include comment %>
     <% include components/latestNew %>
     <% include components/footer %>
     <% include common/bottom %>

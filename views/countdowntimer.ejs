@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <% include common/head %>
+    <link rel="stylesheet" href="./css/countdowntimer.css">
+</head>
+<body>
+
+        <div class="countdown-timer">
+            <div class="countdowntimer__Header">
+                  <span>HURRY UP!</span>
+                  <img src="http://klbtheme.com/qualis/wp-content/uploads/2019/01/slider-07.jpg" alt="">
+            </div>
+
+        <div id="clockdiv">
+            <div>
+                <span class="days" id="day"></span>
+                <div class="smalltext">Days</div>
+            </div>
+            <div>
+                <span class="hours" id="hour"></span>
+                <div class="smalltext">Hours</div>
+            </div>
+            <div>
+                <span class="minutes" id="minute"></span>
+                <div class="smalltext">Minutes</div>
+            </div>
+            <div>
+                <span class="seconds" id="second"></span>
+                <div class="smalltext">Seconds</div>
+            </div>
+        </div>
+
+                  <div class="countdowntimer__content container">
+                    <div class="row">
+                      <% for(var products of productListThree) { %>
+                        <div class="col-md-2 product-wrapper">
+                            <div class="product-image--wrapper">
+                                <a href="">
+                                    <img src="<%= products.image %>" class="product-image"></img>
+                                </a>
+                            </div>
+                            <div class="product-name">
+                                <%= products.name %>
+                            </div>
+                            <div class="product-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="product-price">
+                                <%= products.price %> $
+                            </div>
+                            <a href="#" data-name="<%= products.name %>" data-price="<%= products.price %>"
+                                class="addtocartBTN add-to-cart"></a>
+                        </div>
+                      <% } %>
+                  </div>
+                  </div>
+</div>
+<script src="./js/countdowntimer.js"></script>
+</body>

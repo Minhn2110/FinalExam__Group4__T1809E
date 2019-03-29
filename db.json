@@ -1,0 +1,303 @@
+{
+  "admin": [
+    {
+      "id": "67ksj89d87d7h8",
+      "userName": "admin@admin",
+      "password": "admin"
+    }
+  ],
+  "productList": [
+    {
+      "name": "Orange",
+      "price": "5.99",
+      "shortDescription": "",
+      "detailedDescription": "",
+      "id": "fdOrM9HMv",
+      "quantity": "30",
+      "image": "uploads/e37bf0647086e229c4ec66be6b627ea9"
+    },
+    {
+      "name": "Grape",
+      "price": "6.99",
+      "shortDescription": "",
+      "detailedDescription": "",
+      "id": "XE_O35jhp",
+      "quantity": "60",
+      "image": "uploads/508be97c35e87b93cc01ee48facc91ec"
+    },
+    {
+      "name": "Carrot",
+      "price": "7.99",
+      "shortDescription": "",
+      "detailedDescription": "",
+      "id": "rZs82l0wC",
+      "quantity": "80",
+      "image": "uploads/b7c6081ed03921171a9eac5227c9eb19"
+    },
+    {
+      "name": "Cucumber",
+      "price": "14.99",
+      "shortDescription": "",
+      "detailedDescription": "",
+      "id": "JyZeZe5RN",
+      "quantity": "20",
+      "image": "uploads/c39cc8834b529f3651a05dd573b48fcf"
+    },
+    {
+      "name": "Tomatoes",
+      "price": "6.99",
+      "shortDescription": "",
+      "detailedDescription": "",
+      "id": "C25a7RAdI",
+      "quantity": "100",
+      "image": "uploads/758ae056b4eccf75595a3347f13f84a8"
+    },
+    {
+      "name": "Pepper",
+      "price": "9.99",
+      "shortDescription": "",
+      "detailedDescription": "",
+      "id": "lqnkaJ4UC",
+      "quantity": "200",
+      "image": "uploads/e65616378ea9e86c7d87ba2ad6a3a89f"
+    },
+    {
+      "name": "Fresh ",
+      "price": "10.99",
+      "shortDescription": "",
+      "detailedDescription": "",
+      "id": "EWbIRQ8C1",
+      "quantity": "60",
+      "image": "uploads/a9930d2da5b25133021b317cd2a0f724"
+    },
+    {
+      "name": "Apple",
+      "price": "14.99",
+      "shortDescription": "",
+      "detailedDescription": "",
+      "id": "7SRhvlTqn",
+      "quantity": "10",
+      "image": "uploads/c81eb806f55f7bbb3b81f6ec0114820d"
+    },
+    {
+      "name": "Strawberry",
+      "price": "16.99",
+      "shortDescription": "",
+      "detailedDescription": "",
+      "id": "NgMy4wz7Q",
+      "quantity": "5",
+      "image": "uploads/8b4f509a2bf7e39769ffaa06fa79a525"
+    }
+  ],
+  "productListTwo": [
+    {
+      "image": "img/Avocado.jpg",
+      "name": "Moroccan Avocado Smoothie ",
+      "price": "9.99"
+    },
+    {
+      "image": "img/Coconut.jpg",
+      "name": "Coconut Smoothie ",
+      "price": "3.99"
+    },
+    {
+      "image": "img/Dragon Fruit.jpg",
+      "name": "Dragon Fruit Smoothie ",
+      "price": "6.99"
+    },
+    {
+      "image": "img/Spinack.jpg",
+      "name": "Straight Up  ",
+      "price": "6.99"
+    },
+    {
+      "image": "img/the Other Beet One.jpg",
+      "name": "The Other Beet One ",
+      "price": "6.99"
+    },
+    {
+      "image": "img/Eastern-Sunset.jpg",
+      "name": "Eastern Sunset ",
+      "price": "6.99"
+    }
+  ],
+  "itemList": [
+    {
+      "name": "Fruit juices"
+    },
+    {
+      "name": "Vegetable Juices"
+    },
+    {
+      "name": "Smoothies"
+    },
+    {
+      "name": "Protein Shakes"
+    },
+    {
+      "name": "Winter Menu"
+    },
+    {
+      "name": "Chocolate Juices"
+    },
+    {
+      "name": "Mock Tails"
+    }
+  ],
+  "footerListOne": [
+    {
+      "name": "Blog",
+      "link": "https://www.google.com/"
+    },
+    {
+      "name": "FAQs",
+      "link": "https://www.google.com/"
+    },
+    {
+      "name": "Payment",
+      "link": "https://www.google.com/"
+    },
+    {
+      "name": "Shipment",
+      "link": "https://www.google.com/"
+    },
+    {
+      "name": "Where is my order?",
+      "link": "https://www.google.com/"
+    },
+    {
+      "name": "Return Policy",
+      "link": "https://www.google.com/"
+    }
+  ],
+  "footerListTwo": [
+    {
+      "name": "Your Account",
+      "link": "https://www.google.com/"
+    },
+    {
+      "name": "Information",
+      "link": "https://www.google.com/"
+    },
+    {
+      "name": "Addresses",
+      "link": "https://www.google.com/"
+    },
+    {
+      "name": "Discount",
+      "link": "https://www.google.com/"
+    },
+    {
+      "name": "Orders History",
+      "link": "https://www.google.com/"
+    },
+    {
+      "name": "Order Tracking",
+      "link": "https://www.google.com/"
+    }
+  ],
+  "footerListThree": [
+    {
+      "name": "Site Map",
+      "link": "https://www.google.com/"
+    },
+    {
+      "name": "Search Terms",
+      "link": "https://www.google.com/"
+    },
+    {
+      "name": "Advanced Search",
+      "link": "https://www.google.com/"
+    },
+    {
+      "name": "About Us",
+      "link": "https://www.google.com/"
+    },
+    {
+      "name": "Contact Us",
+      "link": "https://www.google.com/"
+    },
+    {
+      "name": "Suppliers",
+      "link": "https://www.google.com/"
+    }
+  ],
+  "latestNew": [
+    {
+      "image": "http://klbtheme.com/qualis/wp-content/uploads/2018/12/blog-img1-391x207.jpg",
+      "header": "Powerful and flexible premium Ecommerce themes",
+      "paragraph": "Fusce ac pharetra urna. Duis non lacus sit amet lacus interdum facilisis sed non est. Ut mi metus, semper eu"
+    },
+    {
+      "image": "http://klbtheme.com/qualis/wp-content/uploads/2018/12/blog-img2-391x207.jpg",
+      "header": "Awesome template with lot’s of features on the board!",
+      "paragraph": "Fusce ac pharetra urna. Duis non lacus sit amet lacus interdum facilisis sed non est. Ut mi metus, semper eu"
+    },
+    {
+      "image": "http://klbtheme.com/qualis/wp-content/uploads/2019/01/blog-img3-391x207.jpg",
+      "header": "Premium template with unlimited colours, and fully Customizable",
+      "paragraph": "Fusce ac pharetra urna. Duis non lacus sit amet lacus interdum facilisis sed non est. Ut mi metus, semper eu"
+    }
+  ],
+  "customers": [
+    {
+      "name": "Belinda Anderson",
+      "avatar": "uploads/5d564f6efedd4a4dd608bab877f5d93e",
+      "email": "belinda@gmail.com",
+      "phoneNumber": "7015559098",
+      "address": "1256 33rd Avenue S Fargo,ND 58103",
+      "gender": "male"
+    },
+    {
+      "name": "Carley Boehm",
+      "avatar": "./uploads/1887158d6710e0a4cd8aceeef7a5b798",
+      "email": "ccboehm@gmail.com",
+      "phoneNumber": "7015557889",
+      "address": "1902 2nd Avenue S Fargo,ND58102",
+      "gender": "female"
+    },
+    {
+      "name": "Cristina Andres",
+      "avatar": "uploads/dd14e5cc79d0094fa6021b36f957d1e2",
+      "email": "candresm@gmail.com",
+      "phoneNumber": "4155552174",
+      "address": "3250 Sheynne West Fargo,ND",
+      "gender": "female"
+    },
+    {
+      "name": "Darwin Branson",
+      "avatar": "uploads/8e546038bc86e9529e1dfc7bb52661ff",
+      "email": "dbransonm@gmail.com",
+      "phoneNumber": "7015553457",
+      "address": "3156 Jefferson Street Fargo,ND 58104",
+      "gender": "male"
+    }
+  ],
+  "productListThree": [
+    {
+      "image": "img/Avocado.jpg",
+      "name": "Moroccan Avocado Smoothie ",
+      "price": "9.99"
+    },
+    {
+      "image": "img/Coconut.jpg",
+      "name": "Coconut Smoothie ",
+      "price": "3.99"
+    },
+    {
+      "image": "img/Dragon Fruit.jpg",
+      "name": "Dragon Fruit Smoothie ",
+      "price": "6.99"
+    },
+    {
+      "image": "img/Spinack.jpg",
+      "name": "Straight Up  ",
+      "price": "6.99"
+    },
+    {
+      "image": "img/the Other Beet One.jpg",
+      "name": "The Other Beet One ",
+      "price": "6.99"
+    }
+  ]
+}
