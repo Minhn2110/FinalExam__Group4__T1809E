@@ -14,8 +14,6 @@ var shoppingCart = (function () {
         this.price = price;
         this.count = count;
     }
-
-
     // Save cart
     function saveCart() {
         localStorage.setItem('shoppingCart', JSON.stringify(cart));
