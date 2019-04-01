@@ -89,22 +89,130 @@
       "image": "uploads/8b4f509a2bf7e39769ffaa06fa79a525"
     },
     {
-      "name": "b",
-      "quantity": "1000",
-      "price": "100",
-      "shortDescription": "sdffffffffffffffffffffffffffffffffff fffffffffffffff ffffffffffffffffff fffffffffffffff fffffffffffffffff g gsg      ggggggggggggggggggggg ggggggggggg",
-      "detailedDescription": "sdffffffffffffffffffffffffffffffffff fffffffffffffff ffffffffffffffffff fffffffffffffff fffffffffffffffff g gsg      ggggggggggggggggggggg ggggggggggg sdffffffffffffffffffffffffffffffffff fffffffffffffff ffffffffffffffffff fffffffffffffff fffffffffffffffff g gsg      ggggggggggggggggggggg ggggggggggg sdffffffffffffffffffffffffffffffffff fffffffffffffff ffffffffffffffffff fffffffffffffff fffffffffffffffff g gsg      ggggggggggggggggggggg ggggggggggg",
-      "id": "SwBxbrYwL",
-      "image": "img/Coconut.jpg"
+      "id": "11srwm83H",
+      "image": "img/Avocado.jpg",
+      "name": "Moroccan Avocado Smoothie ",
+      "quantity": "100",
+      "price": "9.99"
     },
     {
-      "name": "asdfghjk",
-      "quantity": "23",
-      "price": "2134",
-      "shortDescription": "adsfghjk12111111111111111111111111111111111111111111111111111111111111111111111adsfghjk12111111111111111111111111111111111111111111111111111111111111111111111adsfghjk12111111111111111111111111111111111111111111111111111111111111111111111adsfghjk12111111111111111111111111111111111111111111111111111111111111111111111",
-      "detailedDescription": "asfdghjkladsfghjk12111111111111111111111111111111111111111111111111111111111111111111111adsfghjk12111111111111111111111111111111111111111111111111111111111111111111111adsfghjk12111111111111111111111111111111111111111111111111111111111111111111111adsfghjk12111111111111111111111111111111111111111111111111111111111111111111111",
-      "id": "uty1PHvCo",
-      "image": "uploads/7abc2306edb33079b3e034c2f7886f5b"
+      "id": "1EFd2p6UG",
+      "image": "img/Coconut.jpg",
+      "name": "Coconut Smoothie ",
+      "quantity": "10",
+      "price": "3.99"
+    },
+    {
+      "id": "xxoyFeqW2",
+      "image": "img/Dragon Fruit.jpg",
+      "name": "Dragon Fruit Smoothie ",
+      "quantity": "20",
+      "price": "6.99"
+    },
+    {
+      "id": "9Euyq52Ji",
+      "image": "img/Spinack.jpg",
+      "name": "Straight Up  ",
+      "quantity": "40",
+      "price": "6.99"
+    },
+    {
+      "id": "H9TvayENU",
+      "image": "img/the Other Beet One.jpg",
+      "name": "The Other Beet One ",
+      "quantity": "100",
+      "price": "6.99"
+    },
+    {
+      "id": "wg29c6F37",
+      "image": "img/Eastern-Sunset.jpg",
+      "name": "Eastern Sunset ",
+      "quantity": "50",
+      "price": "6.99"
+    },
+    {
+      "id": "1LXwxR6dZ",
+      "image": "img/Avocado.jpg",
+      "name": "Moroccan Avocado Smoothie ",
+      "quantity": "70",
+      "price": "9.99"
+    },
+    {
+      "id": "SLt9w47J7",
+      "image": "img/Coconut.jpg",
+      "name": "Coconut Smoothie ",
+      "quantity": "80",
+      "price": "3.99"
+    },
+    {
+      "id": "1LXwxR6dZ",
+      "image": "img/Dragon Fruit.jpg",
+      "name": "Dragon Fruit Smoothie ",
+      "quantity": "100",
+      "price": "6.99"
+    },
+    {
+      "id": "1p9LUGBtq",
+      "image": "img/Spinack.jpg",
+      "name": "Straight Up  ",
+      "quantity": "200",
+      "price": "6.99"
+    },
+    {
+      "id": "49BLimgDc",
+      "image": "img/the Other Beet One.jpg",
+      "name": "The Other Beet One ",
+      "quantity": "30",
+      "price": "6.99"
+    },
+    {
+      "id": "ERXbANZN5",
+      "image": "img/Eastern-Sunset.jpg",
+      "name": "Eastern Sunset ",
+      "quantity": "70",
+      "price": "6.99"
+    },
+    {
+      "id": "brqJ9rNos",
+      "image": "img/Avocado.jpg",
+      "name": "Moroccan Avocado Smoothie ",
+      "quantity": "100",
+      "price": "9.99"
+    },
+    {
+      "id": "1LXwxR6dZ",
+      "image": "img/Coconut.jpg",
+      "name": "Coconut Smoothie ",
+      "quantity": "45",
+      "price": "3.99"
+    },
+    {
+      "id": "ppiLc98o3",
+      "image": "img/Dragon Fruit.jpg",
+      "name": "Dragon Fruit Smoothie ",
+      "quantity": "100",
+      "price": "6.99"
+    },
+    {
+      "id": "XeAQ8Nrp7",
+      "image": "img/Spinack.jpg",
+      "name": "Straight Up  ",
+      "quantity": "20",
+      "price": "6.99"
+    },
+    {
+      "id": "15d3ZHQXz",
+      "image": "img/the Other Beet One.jpg",
+      "name": "The Other Beet One ",
+      "quantity": "10",
+      "price": "6.99"
+    },
+    {
+      "id": "3rCfk7TQJ",
+      "image": "img/Eastern-Sunset.jpg",
+      "name": "Eastern Sunset ",
+      "quantity": "100",
+      "price": "6.99"
     }
   ],
   "productListTwo": [

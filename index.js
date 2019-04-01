@@ -1,236 +1,12 @@
-// var express = require('express');
-// var bodyParser = require('body-parser');
-// var app = express();
-
-// //multer vs cookies
-// var multer  = require('multer');
-// var upload = multer({ dest: './public/uploads/' });
-// var cookieParser = require('cookie-parser');
-// app.use(cookieParser());
-// const shortid = require('shortid');
-
-
-// const low = require('lowdb');
-// const FileSync = require('lowdb/adapters/FileSync');
-// const adapter = new FileSync('db.json');
-// const db = low(adapter);
-// db.defaults({ productList: [], itemList: [], footerListOne: [], footerListTwo: [],
-// footerListThree: [], latestNew: [] ,footerListOne: [] ,footerListTwo: [], 
-// footerListThree: [] ,latestNew: [] ,admin: [] ,customers: []    })
-//   .write();
-
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(express.static('public'));
-// app.set('view engine', 'ejs');
-// app.set('views', './views');
-
-
-// app.listen('3000', function () {
-// 	console.log(" listening port 3000!");
-// });
-
-// //admin
-// app.get("/admin",function (request, response) {
-// 	// response.redirect('/admin/login')
-// 	if(!request.cookies.admin){
-// 		response.redirect("/login");
-// 	};
-
-// 	response.render("admin",{
-
-// 		productList: db.get('productList').value(),
-// 		customers: db.get('customers').value()
-// 	});
-// });
-// // remove product
-// app.get("/remove/:id", function(request, response){
-// 	var id = request.params.id;
-// 	db.get('productList').remove({ id: id }).write();
-// 	response.redirect("/admin");
-// });
-// //edit product
-// // app.post("/edit", function(request, response){
-// // 	// var product = db.get('productList').filter({id: id}).value();
-// // 	var product = db.get('productList').write();
-// // 	product.name = request.body.name.write();
-// // 	console.log(request.body);
-// // 	// // response.render("edit");
-// // });
-
-// //upload product
-// app.post("/addproduct",upload.single('avatar'), function (request, response) {
-// 	// response.redirect('/admin/login')
-// 	request.body.id = shortid.generate();
-// 	if (request.file.path.indexOf('\\') !== -1) {
-// 		request.body.image = request.file.path.split('\\').slice(1).join('/');
-// 	}else{
-// 			request.body.image = request.file.path.split('/').slice(1).join('/');
-// 	};
-// 	db.get('productList').push(request.body).write();
-// 	response.redirect('/admin')
-// });
-
-// app.get("/", function (request, response) {
-// 	response.render("index");
-// });
-
-
-// app.get("/about", function (request, response) {
-// 	response.render("about");
-// });
-
-// app.get("/contact", function (request, response) {
-// 	response.render("contact");
-// });
-// app.get("/search", function (request, response) {
-// 	var q = request.query.q;
-//    	var searchProduct = db.get('productList').value().filter(function(product) {
-//     return product.name.toLowerCase().indexOf(q.toLowerCase()) !== -1;
-//  	 });
-// 	response.render("product-grid",{
-// 		itemList: db.get('itemList').value(),
-// 		productList: searchProduct
-// 	});
-// });
-// app.get("/login", function (request, response) {
-// 	response.render("login");
-// });
-// app.post("/admin/login", function (request, response) {
-// 	var userName = request.body.userName;
-//   	var password = request.body.password;
-//   	var admin = db.get('admin').find({ userName: userName }).value();
-//   	if (!admin) {
-//   	response.render('/login'); 		
-//   		return ;
-//   	}
-//   	if (!admin) {
-//   	response.render('/login'); 		
-//   		return ;
-//   	}
-// 	if (admin.password !== password) {
-// 	  	response.render('/login'); 		
-// 	  		return ;
-// 	  	};
-
-//   	response.cookie('admin', admin.id);
-//   	response.redirect('/admin');
-// });
-
-
-
-// var itemList = [{
-// 		name: 'Fruit juices'
-// 	},
-// 	{
-// 		name: 'Vegetable Juices'
-// 	},
-// 	{
-// 		name: 'Smoothies'
-// 	},
-// 	{
-// 		name: 'Protein Shakes'
-// 	},
-// 	{
-// 		name: 'Winter Menu'
-// 	},
-// 	{
-// 		name: 'Chocolate Juices'
-// 	},
-// 	{
-// 		name: 'Mock Tails'
-// 	},
-// ]
-// 
-
-// //admin
-// app.get("/admin",function (request, response) {
-// 	// response.redirect('/admin/login')
-// 	if(!request.cookies.admin){
-// 		response.redirect("/login");
-// 	};
-
-// 	response.render("admin",{
-
-// 		productList: db.get('productList').value(),
-// 		customers: db.get('customers').value()
-// 	});
-// });
-// // remove product
-// app.get("/remove/:id", function(request, response){
-// 	var id = request.params.id;
-// 	db.get('productList').remove({ id: id }).write();
-// 	response.redirect("/admin");
-// });
-// //edit product
-// // app.post("/edit", function(request, response){
-// // 	// var product = db.get('productList').filter({id: id}).value();
-// // 	var product = db.get('productList').write();
-// // 	product.name = request.body.name.write();
-// // 	console.log(request.body);
-// // 	// // response.render("edit");
-// // });
-
-// //upload product
-// app.post("/addproduct",upload.single('avatar'), function (request, response) {
-// 	// response.redirect('/admin/login')
-// 	request.body.id = shortid.generate();
-// 	if (request.file.path.indexOf('\\') !== -1) {
-// 		request.body.image = request.file.path.split('\\').slice(1).join('/');
-// 	}else{
-// 			request.body.image = request.file.path.split('/').slice(1).join('/');
-// 	};
-// 	db.get('productList').push(request.body).write();
-// 	response.redirect('/admin')
-// });
-// app.get("/search", function (request, response) {
-// 	var q = request.query.q;
-//    	var searchProduct = db.get('productList').value().filter(function(product) {
-//     return product.name.toLowerCase().indexOf(q.toLowerCase()) !== -1;
-//  	 });
-// 	response.render("product-grid",{
-// 		itemList: db.get('itemList').value(),
-// 		productList: searchProduct
-// 	});
-// });
-// app.get("/login", function (request, response) {
-// 	response.render("login");
-// });
-// app.post("/admin/login", function (request, response) {
-// 	var userName = request.body.userName;
-//   	var password = request.body.password;
-//   	var admin = db.get('admin').find({ userName: userName }).value();
-//   	if (!admin) {
-//   	response.render('/login'); 		
-//   		return ;
-//   	}
-//   	if (!admin) {
-//   	response.render('/login'); 		
-//   		return ;
-//   	}
-// 	if (admin.password !== password) {
-// 	  	response.render('/login'); 		
-// 	  		return ;
-// 	  	};
-
-//   	response.cookie('admin', admin.id);
-//   	response.redirect('/admin');
-// });
-
-
-
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 
-//multer vs cookies
+
 var multer  = require('multer');
 var upload = multer({ dest: './public/uploads/' });
 var cookieParser = require('cookie-parser');
-app.use(cookieParser());
 const shortid = require('shortid');
-
-
 const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
 const adapter = new FileSync('db.json');
@@ -239,6 +15,7 @@ db.defaults({ productList: [], itemList: [],footerListOne: [], footerListTwo: []
 footerListThree: [], latestNew: [] ,admin: [] ,customers: []  ,  productListTwo: [], productListThree: []  })
   .write();
 
+app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
@@ -252,7 +29,6 @@ app.listen('3000', function () {
 
 //admin
 app.get("/admin",function (request, response) {
-	// response.redirect('/admin/login')
 	if(!request.cookies.admin){
 		response.redirect("/login");
 	};
@@ -262,20 +38,13 @@ app.get("/admin",function (request, response) {
 		customers: db.get('customers').value()
 	});
 });
+
 // remove product
 app.get("/remove/:id", function(request, response){
 	var id = request.params.id;
 	db.get('productList').remove({ id: id }).write();
 	response.redirect("/admin");
 });
-//edit product
-// app.post("/edit", function(request, response){
-// 	// var product = db.get('productList').filter({id: id}).value();
-// 	var product = db.get('productList').write();
-// 	product.name = request.body.name.write();
-// 	console.log(request.body);
-// 	// // response.render("edit");
-// });
 
 //upload product
 app.post("/addproduct",upload.single('avatar'), function (request, response) {
@@ -477,15 +246,6 @@ app.get("/product-grid/:page", function (request, response) {
 		}
 	);
 });
-// app.get("/product-grid", function (request, response) {
-// 	response.render("product-grid", {
-// 		itemList,
-// 		productList,
-// 		footerListOne,
-// 		footerListTwo,
-// 		footerListThree
-// 	});
-// });
 
 app.get("/footer", function (request, response) {
 	response.render("footer", {			
