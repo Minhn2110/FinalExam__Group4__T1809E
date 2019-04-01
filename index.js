@@ -500,3 +500,9 @@ app.get("/latestNew", function (request, response) {
 		latestNew: db.get('latestNew').value()
 	});
 });
+
+app.get("/feedback", function (request, response) {
+	response.render("feedback", {
+		latestNew: db.get('latestNew').value()
+	});
+});
