@@ -230,14 +230,15 @@
     margin-top: 5%;
     padding-left: 0 !important;
     padding-right: 0 !important;
+    overflow:hidden;
 }
 
 .product-wrapper {
     padding-left: 0px !important;
     padding-right: 0px !important;
     float: left;
-    border-right: 1px #eaeaea solid;
-    border-bottom: 1px #eaeaea solid;
+    border: 1px #eaeaea solid;
+    border-collapse: collapse;
     position: relative;
     overflow: hidden;
 }
@@ -332,10 +333,15 @@
     font-weight: 700
 }
 
+.abc {
+background:white;
+}
 
 .pagination {
     padding-left: 1px !important;
     padding-top: 20px;
+    background:white;
+
 }
 
 .page-link {
@@ -382,5 +388,10 @@
         top: 55%;
         left: 35%;
     }
+
+}
+
+.dfg {
+background:transparent !important;
 
 }

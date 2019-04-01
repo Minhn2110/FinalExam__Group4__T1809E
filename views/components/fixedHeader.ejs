@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <% include ../common/head %>
-    <link rel="stylesheet" href="./css/components/fixedHeader.css">
+    <link rel="stylesheet" href="../css/components/fixedHeader.css">
 </head>
 
 <body>
@@ -34,25 +34,26 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 col-lg-2 col-xs-1 image-wrapper">
-                        <img class="header-logo" src="./img/logo.png" alt="">
+                        <img class="header-logo" src="../img/logo.png" alt="">
                     </div>
                     <div class="col-md-12 col-lg-6 col-xs-12 meNu-Section">
                         <ul class="meNu-wrapper">
-                            <li class="meNu-Items"><a href="homePage" class="meNu-Links">Home</a></li>
-                            <li class="meNu-Items"><a href="product-grid" class="meNu-Links">PRODUCT</a></li>
-                            <li class="meNu-Items"><a href="contactUs" class="meNu-Links">CONTACT US</a></li>
+                            <li class="meNu-Items"><a href="/homePage" class="meNu-Links">Home</a></li>
+                            <li class="meNu-Items"><a href="/product-grid/1" class="meNu-Links">PRODUCT</a></li>
+                            <li class="meNu-Items"><a href="/contactUs" class="meNu-Links">CONTACT US</a></li>
                             <li class="meNu-Items"><a href="#" class="meNu-Links">FEED BACK</a></li>
-                            <li class="meNu-Items"><a href="aboutUs" class="meNu-Links">ABOUT US</a></li>
+                            <li class="meNu-Items"><a href="/aboutUs" class="meNu-Links">ABOUT US</a></li>
                         </ul>
                     </div>
                     <div class="col-md-2 col-lg-2 search-button-area">
                         <i class="fas fa-search search-button"></i>
                         <form action="/search" method="get">
-                            <input type="text" name="q" class="search-area" placeholder="Search">
+                            <input type="text" name="q" class="search-area" 
+                            value="<%= typeof q === 'undefined' ? '' : q %>" placeholder="Search">
                         </form> 
                     </div>
                     <div class="col-md-12 col-lg-2 cart-area">
-                        <div class="meNu-Section--mobile" data-toggle="modal" data-target="#menuModal">
+                        <div class="meNu-Section--mobile" data-togg"le="modal" data-target="#menuModal">
                             <i class="fas fa-bars"></i>
                         </div>
                         <div class="cart-button" data-toggle="modal" data-target="#cart">
@@ -87,7 +88,7 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">
-                        <a class = "abc"href="checkOut">Order Now</a></button>
+                        <a class = "abc"href="../checkOut">Order Now</a></button>
                 </div>
             </div>
         </div>

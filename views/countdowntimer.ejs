@@ -4,14 +4,18 @@
 <head>
     <% include common/head %>
     <link rel="stylesheet" href="./css/countdowntimer.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/homePage.css">
 
-        <div class="countdown-timer">
-            <div class="countdowntimer__Header">
-                  <span>HURRY UP!</span>
-                  <img src="http://klbtheme.com/qualis/wp-content/uploads/2019/01/slider-07.jpg" alt="">
-            </div>
+
+</head>
+
+<body>
+    <div class="countdown-timer">
+        <div class="countdowntimer__Header">
+            <h1>HURRY UP!</h1>
+            <h3>DEAL OF THE WEEK</h3>
+            <h4>From our family farm right to your doorstep.</h4>
+        </div>
 
         <div id="clockdiv">
             <div>
@@ -31,35 +35,36 @@
                 <div class="smalltext">Seconds</div>
             </div>
         </div>
-
-                  <div class="countdowntimer__content container">
-                    <div class="row">
-                      <% for(var products of productListThree) { %>
-                        <div class="col-md-2 product-wrapper">
-                            <div class="product-image--wrapper">
-                                <a href="">
-                                    <img src="<%= products.image %>" class="product-image"></img>
-                                </a>
-                            </div>
-                            <div class="product-name">
-                                <%= products.name %>
-                            </div>
-                            <div class="product-star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div class="product-price">
-                                <%= products.price %> $
-                            </div>
-                            <a href="#" data-name="<%= products.name %>" data-price="<%= products.price %>"
-                                class="addtocartBTN add-to-cart"></a>
+        <div class="countdowntimer__content">
+            <div class=" container">
+                <div class="row lkj">
+                    <% for(var products of productListThree) { %>
+                    <div class="col-3 countdown-col">
+                        <div class="product-image--wrapper">
+                            <a href="">
+                                <img src="<%= products.image %>" class="product-image"></img>
+                            </a>
                         </div>
-                      <% } %>
-                  </div>
-                  </div>
-</div>
-<script src="./js/countdowntimer.js"></script>
+                        <div class="product-name">
+                            <%= products.name %>
+                        </div>
+                        <div class="product-star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="product-price">
+                            <%= products.price %> $
+                        </div>
+                        <a href="#" data-name="<%= products.name %>" data-price="<%= products.price %>"
+                            class="addtocartCountDown add-to-cart"></a>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/countdowntimer.js"></script>
 </body>
