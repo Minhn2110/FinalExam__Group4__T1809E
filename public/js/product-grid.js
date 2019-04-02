@@ -1,25 +1,17 @@
-// ************************************************
-// Shopping Cart API
-// ************************************************
 
 var shoppingCart = (function () {
-    // =============================
-    // Private methods and propeties
-    // =============================
+
     cart = [];
 
-    // Constructor
     function Item(name, price, count) {
         this.name = name;
         this.price = price;
         this.count = count;
     }
-    // Save cart
     function saveCart() {
         localStorage.setItem('shoppingCart', JSON.stringify(cart));
     }
 
-    // Load cart
     function loadCart() {
         cart = JSON.parse(localStorage.getItem('shoppingCart'));
     }
@@ -28,10 +20,6 @@ var shoppingCart = (function () {
     }
     
 
-
-    // =============================
-    // Public methods and propeties
-    // =============================
     var obj = {};
 
     // Add to cart
@@ -49,9 +37,9 @@ var shoppingCart = (function () {
     }
     // Set count from item
     obj.setCountForItem = function (name, count) {
-        for (var i in cart) {
-            if (cart[i].name === name) {
-                cart[i].count = count;
+        for (var item in cart) {
+            if (cart[item].name === name) {
+                cart[item].count = count;
                 break;
             }
         }
@@ -110,42 +98,22 @@ var shoppingCart = (function () {
         var cartCopy = [];
         for (i in cart) {
             item = cart[i];
+            console.log(item);
             itemCopy = {};
             for (p in item) {
                 itemCopy[p] = item[p];
-
             }
             itemCopy.total = Number(item.price * item.count).toFixed(2);
             cartCopy.push(itemCopy)
         }
-        // console.log('heloo', cartCopy)
         return cartCopy;
     }
-
-    // cart : Array
-    // Item : Object/Class
-    // addItemToCart : Function
-    // removeItemFromCart : Function
-    // removeItemFromCartAll : Function
-    // clearCart : Function
-    // countCart : Function
-    // totalCart : Function
-    // listCart : Function
-    // saveCart : Function
-    // loadCart : Function
     return obj;
 })();
-
-
-// *****************************************
-// Triggers / Events
-// ***************************************** 
-// Add item
 
 function displayCart() {
     var cartArray = shoppingCart.listCart();
     var output = "";
-    var title = 
     output += 
     "<tr class='col'>" +
     "<td class = 'checkOut__Table--title' scope='col'>" + "Products" + "</td>"  +
@@ -171,6 +139,8 @@ function displayCart() {
     $('.total-cart').html(shoppingCart.totalCart());
     $('.total-count').html(shoppingCart.totalCount());
 }
+
+// Add ro Cart
 
 $('.add-to-cart').click(function (event) {
     event.preventDefault();

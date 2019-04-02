@@ -333,16 +333,7 @@
     font-weight: 700
 }
 
-.abc {
-background:white;
-}
 
-.pagination {
-    padding-left: 1px !important;
-    padding-top: 20px;
-    background:white;
-
-}
 
 .page-link {
     color: #292929 !important;
@@ -393,5 +384,19 @@ background:white;
 
 .dfg {
 background:transparent !important;
+
+}
+
+.abc {
+    padding-right:0 !important;
+    padding-left:0 !important;
+
+}
+
+.pagination {
+    padding-left: 1px !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background:transparent !important;
 
 }

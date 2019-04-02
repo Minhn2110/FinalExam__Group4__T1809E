@@ -65,10 +65,9 @@
     outline: none;
 }
 
-.piLarge__Image {}
 
 .piSmall__Image {
-    border: 1px #e5e5e5 solid;
+    border: 1.5px #e5e5e5 solid;
 }
 
 .pi__Name h1 {

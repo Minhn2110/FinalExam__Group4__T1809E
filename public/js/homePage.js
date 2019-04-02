@@ -34,18 +34,5 @@ $('.your-class').slick({
           arrows: false
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
-  });
-
-  // $(window).scroll(function() {
-  //   if ($(this).scrollTop() > 1){  
-  //     $('.container').addClass("container-fluid");
-  //   }
-  //   else {
-  //     $('.abc').removeClass("container");
-  //     $('.abc').addClass("container-fluid");
-  //   }
-  // });
+    })
