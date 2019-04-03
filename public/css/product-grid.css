@@ -184,6 +184,8 @@
     letter-spacing: 1px;
     font-weight: 400;
     font-family: oswald, sans-serif;
+    background: transparent;
+
 }
 
 .slider-header {
@@ -194,6 +196,8 @@
     margin-top: 0;
     margin-bottom: 2px;
     font-family: oswald, sans-serif;
+    background: transparent;
+
 }
 
 .slider-discount {
@@ -207,6 +211,8 @@
     margin-top: 6px;
     text-transform: uppercase;
     letter-spacing: .5px;
+    background: transparent;
+
 }
 
 .carousel-control-prev-icon {
