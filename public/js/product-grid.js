@@ -98,7 +98,6 @@ var shoppingCart = (function () {
         var cartCopy = [];
         for (i in cart) {
             item = cart[i];
-            console.log(item);
             itemCopy = {};
             for (p in item) {
                 itemCopy[p] = item[p];
@@ -110,6 +109,8 @@ var shoppingCart = (function () {
     }
     return obj;
 })();
+
+
 
 function displayCart() {
     var cartArray = shoppingCart.listCart();

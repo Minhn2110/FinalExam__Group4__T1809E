@@ -8,172 +8,106 @@
   ],
   "productList": [
     {
-      "name": "Orange",
-      "price": "5.99",
+      "name": "Simply Orange Juice Pulp Free 52oz",
+      "price": "3.99",
       "shortDescription": "",
       "detailedDescription": "",
       "id": "fdOrM9HMv",
       "quantity": "30",
-      "image": "uploads/e37bf0647086e229c4ec66be6b627ea9"
+      "image": "img/Fruit01.jpg"
     },
     {
-      "name": "Grape",
+      "name": "Simply Lemonade Raspberry 52oz",
       "price": "6.99",
       "shortDescription": "",
       "detailedDescription": "",
       "id": "XE_O35jhp",
       "quantity": "60",
-      "image": "uploads/508be97c35e87b93cc01ee48facc91ec"
+      "image": "img/Fruit02.jpg"
     },
     {
-      "name": "Carrot",
-      "price": "7.99",
+      "name": "Simply Lemonade 52oz",
+      "price": "3.99",
       "shortDescription": "",
       "detailedDescription": "",
       "id": "rZs82l0wC",
       "quantity": "80",
-      "image": "uploads/b7c6081ed03921171a9eac5227c9eb19"
+      "image": "img/Fruit03.jpg"
     },
     {
-      "name": "Cucumber",
-      "price": "14.99",
+      "name": " Pressed Juice Gut Check",
+      "price": "3.29",
       "shortDescription": "",
       "detailedDescription": "",
       "id": "JyZeZe5RN",
       "quantity": "20",
-      "image": "uploads/c39cc8834b529f3651a05dd573b48fcf"
+      "image": "img/VGJuice01.jpg"
     },
     {
-      "name": "Tomatoes",
+      "name": " Pressed Juice Wellness Ginger",
       "price": "6.99",
       "shortDescription": "",
       "detailedDescription": "",
       "id": "C25a7RAdI",
       "quantity": "100",
-      "image": "uploads/758ae056b4eccf75595a3347f13f84a8"
+      "image": "img/VGJuice02.jpg"
     },
     {
-      "name": "Pepper",
-      "price": "9.99",
+      "name": "Pressed Juice Vitality Turmeric",
+      "price": "3.99",
       "shortDescription": "",
       "detailedDescription": "",
       "id": "lqnkaJ4UC",
       "quantity": "200",
-      "image": "uploads/e65616378ea9e86c7d87ba2ad6a3a89f"
+      "image": "img/VGJuice03.jpg"
     },
     {
-      "name": "Fresh ",
+      "name": "Pressed Juice Potent C ",
       "price": "10.99",
       "shortDescription": "",
       "detailedDescription": "",
       "id": "EWbIRQ8C1",
       "quantity": "60",
-      "image": "uploads/a9930d2da5b25133021b317cd2a0f724"
+      "image": "img/VGJuice04.jpg"
     },
     {
-      "name": "Apple",
+      "name": "Naked Juice Berry Blast 15 oz",
       "price": "14.99",
       "shortDescription": "",
       "detailedDescription": "",
       "id": "7SRhvlTqn",
       "quantity": "10",
-      "image": "uploads/c81eb806f55f7bbb3b81f6ec0114820d"
+      "image": "img/WM01.jpg"
     },
     {
-      "name": "Strawberry",
+      "name": "Naked Juice Green Machine 15 oz",
       "price": "16.99",
       "shortDescription": "",
       "detailedDescription": "",
       "id": "NgMy4wz7Q",
       "quantity": "5",
-      "image": "uploads/8b4f509a2bf7e39769ffaa06fa79a525"
+      "image": "img/WM02.jpg"
+    },
+    {
+      "name": "Naked Juice Mighty Mango 15 oz",
+      "price": "16.99",
+      "shortDescription": "",
+      "detailedDescription": "",
+      "id": "NgMygwz7Q",
+      "quantity": "5",
+      "image": "img/WM03.jpg"
+    },
+    {
+      "name": "Naked Juice Strawberry Banana 15 oz",
+      "price": "16.99",
+      "shortDescription": "",
+      "detailedDescription": "",
+      "id": "P01",
+      "quantity": "5",
+      "image": "img/WM04.jpg"
     },
     {
       "id": "11srwm83H",
-      "image": "img/Avocado.jpg",
-      "name": "Moroccan Avocado Smoothie ",
-      "quantity": "100",
-      "price": "9.99"
-    },
-    {
-      "id": "1EFd2p6UG",
-      "image": "img/Coconut.jpg",
-      "name": "Coconut Smoothie ",
-      "quantity": "10",
-      "price": "3.99"
-    },
-    {
-      "id": "xxoyFeqW2",
-      "image": "img/Dragon Fruit.jpg",
-      "name": "Dragon Fruit Smoothie ",
-      "quantity": "20",
-      "price": "6.99"
-    },
-    {
-      "id": "9Euyq52Ji",
-      "image": "img/Spinack.jpg",
-      "name": "Straight Up  ",
-      "quantity": "40",
-      "price": "6.99"
-    },
-    {
-      "id": "H9TvayENU",
-      "image": "img/the Other Beet One.jpg",
-      "name": "The Other Beet One ",
-      "quantity": "100",
-      "price": "6.99"
-    },
-    {
-      "id": "wg29c6F37",
-      "image": "img/Eastern-Sunset.jpg",
-      "name": "Eastern Sunset ",
-      "quantity": "50",
-      "price": "6.99"
-    },
-    {
-      "id": "1LXwxR6dZ",
-      "image": "img/Avocado.jpg",
-      "name": "Moroccan Avocado Smoothie ",
-      "quantity": "70",
-      "price": "9.99"
-    },
-    {
-      "id": "SLt9w47J7",
-      "image": "img/Coconut.jpg",
-      "name": "Coconut Smoothie ",
-      "quantity": "80",
-      "price": "3.99"
-    },
-    {
-      "id": "1LXwxR6dZ",
-      "image": "img/Dragon Fruit.jpg",
-      "name": "Dragon Fruit Smoothie ",
-      "quantity": "100",
-      "price": "6.99"
-    },
-    {
-      "id": "1p9LUGBtq",
-      "image": "img/Spinack.jpg",
-      "name": "Straight Up  ",
-      "quantity": "200",
-      "price": "6.99"
-    },
-    {
-      "id": "49BLimgDc",
-      "image": "img/the Other Beet One.jpg",
-      "name": "The Other Beet One ",
-      "quantity": "30",
-      "price": "6.99"
-    },
-    {
-      "id": "ERXbANZN5",
-      "image": "img/Eastern-Sunset.jpg",
-      "name": "Eastern Sunset ",
-      "quantity": "70",
-      "price": "6.99"
-    },
-    {
-      "id": "brqJ9rNos",
       "image": "img/Avocado.jpg",
       "name": "Moroccan Avocado Smoothie ",
       "quantity": "100",
@@ -209,8 +143,36 @@
     },
     {
       "id": "3rCfk7TQJ",
-      "image": "img/Eastern-Sunset.jpg",
+      "image": "img/CJuice01.jpg",
       "name": "Eastern Sunset ",
+      "quantity": "100",
+      "price": "6.99"
+    },
+    {
+      "id": "CJ01",
+      "image": "img/Eastern-Sunset.jpg",
+      "name": "Chocolate Thunder ",
+      "quantity": "100",
+      "price": "6.99"
+    },
+    {
+      "id": "MT01",
+      "image": "img/MT01.jpg",
+      "name": "Banana Mocktail ",
+      "quantity": "100",
+      "price": "6.99"
+    },
+    {
+      "id": "MT02",
+      "image": "img/MT02.jpg",
+      "name": "Grandma Mocktail ",
+      "quantity": "100",
+      "price": "6.99"
+    },
+    {
+      "id": "MT03",
+      "image": "img/MT03.jpg",
+      "name": "Love Mocktail ",
       "quantity": "100",
       "price": "6.99"
     }
@@ -249,25 +211,24 @@
   ],
   "itemList": [
     {
+      "link": "../fruit-juice",
       "name": "Fruit juices"
     },
     {
+      "link": "../vegetableJuice",
       "name": "Vegetable Juices"
     },
     {
-      "name": "Smoothies"
+      "name": "Winter Menu",
+      "link": "../winterMenu"
     },
     {
-      "name": "Protein Shakes"
+      "name": "Chocolate Juices",
+      "link": "../chocolateJuice"
     },
     {
-      "name": "Winter Menu"
-    },
-    {
-      "name": "Chocolate Juices"
-    },
-    {
-      "name": "Mock Tails"
+      "name": "Mock Tails",
+      "link": "../mocktail"
     }
   ],
   "footerListOne": [
@@ -401,24 +362,154 @@
   ],
   "productListThree": [
     {
-      "image": "img/countDown1.jpg",
-      "name": "Deluxe Fruit Basket",
-      "price": "39.99"
+      "image": "img/FJ01.jpg",
+      "name": "Dragon Fruit Punch",
+      "price": "5.00"
     },
     {
-      "image": "img/countDown2.jpg",
-      "name": "Extra Large Fruit Basket",
-      "price": "19.99"
+      "image": "img/FJ02.jpg",
+      "name": "Chlorophyll H2O",
+      "price": "5.00"
     },
     {
-      "image": "img/countDown3.jpg",
-      "name": "Premium Fruit Basket",
-      "price": "29.99"
+      "image": "img/FJ03.jpg",
+      "name": "Citrus 3",
+      "price": "5.00"
     },
     {
-      "image": "img/countDown4.jpg",
-      "name": "Classic Gourmet Fruit Basket",
-      "price": "10.99"
+      "image": "img/FJ04.jpg",
+      "name": "Orange Turmeric Apple Lemon",
+      "price": "5.00"
+    }
+  ],
+  "FruitJuice": [
+    {
+      "image": "img/FJ01.jpg",
+      "name": "Dragon Fruit Punch",
+      "price": "5.00"
+    },
+    {
+      "image": "img/FJ02.jpg",
+      "name": "Chlorophyll H2O",
+      "price": "5.00"
+    },
+    {
+      "image": "img/FJ03.jpg",
+      "name": "Citrus 3",
+      "price": "5.00"
+    },
+    {
+      "image": "img/FJ04.jpg",
+      "name": "Orange Turmeric Apple Lemon",
+      "price": "5.00"
+    }
+  ],
+  "VegetableJuice": [
+    {
+      "name": " Pressed Juice Gut Check",
+      "price": "3.29",
+      "shortDescription": "",
+      "detailedDescription": "",
+      "id": "JyZeZe5RN",
+      "quantity": "20",
+      "image": "img/VGJuice01.jpg"
+    },
+    {
+      "name": " Pressed Juice Wellness Ginger",
+      "price": "6.99",
+      "shortDescription": "",
+      "detailedDescription": "",
+      "id": "C25a7RAdI",
+      "quantity": "100",
+      "image": "img/VGJuice02.jpg"
+    },
+    {
+      "name": "Pressed Juice Vitality Turmeric",
+      "price": "3.99",
+      "shortDescription": "",
+      "detailedDescription": "",
+      "id": "lqnkaJ4UC",
+      "quantity": "200",
+      "image": "img/VGJuice03.jpg"
+    },
+    {
+      "name": "Pressed Juice Potent C ",
+      "price": "10.99",
+      "shortDescription": "",
+      "detailedDescription": "",
+      "id": "EWbIRQ8C1",
+      "quantity": "60",
+      "image": "img/VGJuice04.jpg"
+    }
+  ],
+  "Mocktail": [
+    {
+      "id": "MT01",
+      "image": "img/MT01.jpg",
+      "name": "Banana Mocktail ",
+      "quantity": "100",
+      "price": "6.99"
+    },
+    {
+      "id": "MT02",
+      "image": "img/MT02.jpg",
+      "name": "Grandma Mocktail ",
+      "quantity": "100",
+      "price": "6.99"
+    },
+    {
+      "id": "MT03",
+      "image": "img/MT03.jpg",
+      "name": "Love Mocktail ",
+      "quantity": "100",
+      "price": "6.99"
+    }
+  ],
+  "WinterMenu": [
+    {
+      "name": "Naked Juice Berry Blast 15 oz",
+      "price": "14.99",
+      "shortDescription": "",
+      "detailedDescription": "",
+      "id": "7SRhvlTqn",
+      "quantity": "10",
+      "image": "img/WM01.jpg"
+    },
+    {
+      "name": "Naked Juice Green Machine 15 oz",
+      "price": "16.99",
+      "shortDescription": "",
+      "detailedDescription": "",
+      "id": "NgMy4wz7Q",
+      "quantity": "5",
+      "image": "img/WM02.jpg"
+    },
+    {
+      "name": "Naked Juice Mighty Mango 15 oz",
+      "price": "16.99",
+      "shortDescription": "",
+      "detailedDescription": "",
+      "id": "NgMygwz7Q",
+      "quantity": "5",
+      "image": "img/WM03.jpg"
+    },
+    {
+      "name": "Naked Juice Strawberry 15 oz",
+      "price": "16.99",
+      "shortDescription": "",
+      "detailedDescription": "",
+      "id": "P01",
+      "quantity": "5",
+      "image": "img/WM04.jpg"
+    }
+  ],
+  "ChocolateJuice": [
+    {
+      "id": "3rCfk7TQJ",
+      "image": "img/CJuice01.jpg",
+      "name": "Eastern Sunset ",
+      "quantity": "100",
+      "price": "6.99"
     }
   ]
 }

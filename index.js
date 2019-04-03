@@ -179,7 +179,8 @@ app.get("/homePage", function (request, response) {
 		footerListOne: db.get('footerListOne').value(),
 		footerListTwo: db.get('footerListTwo').value(),
 		footerListThree: db.get('footerListThree').value(),
-		latestNew: db.get('latestNew').value()
+		latestNew: db.get('latestNew').value(),
+		WinterMenu: db.get('WinterMenu').value(),
 	});
 });
 app.get("/product-gridTwo", function (request, response) {
@@ -264,5 +265,56 @@ app.get("/latestNew", function (request, response) {
 app.get("/feedback", function (request, response) {
 	response.render("feedback", {
 		latestNew: db.get('latestNew').value()
+	});
+});
+
+
+app.get("/fruit-juice", function (request, response) {
+	response.render("fruit-juice", {
+		FruitJuice: db.get('FruitJuice').value(),
+		itemList: db.get('itemList').value(),
+		footerListOne: db.get('footerListOne').value(),
+		footerListTwo: db.get('footerListTwo').value(),
+		footerListThree: db.get('footerListThree').value()
+	});
+});
+
+app.get("/vegetableJuice", function (request, response) {
+	response.render("vegetableJuice", {
+		VegetableJuice: db.get('VegetableJuice').value(),
+		itemList: db.get('itemList').value(),
+		footerListOne: db.get('footerListOne').value(),
+		footerListTwo: db.get('footerListTwo').value(),
+		footerListThree: db.get('footerListThree').value()
+	});
+});
+
+app.get("/mocktail", function (request, response) {
+	response.render("mocktail", {
+		Mocktail: db.get('Mocktail').value(),
+		itemList: db.get('itemList').value(),
+		footerListOne: db.get('footerListOne').value(),
+		footerListTwo: db.get('footerListTwo').value(),
+		footerListThree: db.get('footerListThree').value()
+	});
+});
+
+app.get("/winterMenu", function (request, response) {
+	response.render("winterMenu", {
+		WinterMenu: db.get('WinterMenu').value(),
+		itemList: db.get('itemList').value(),
+		footerListOne: db.get('footerListOne').value(),
+		footerListTwo: db.get('footerListTwo').value(),
+		footerListThree: db.get('footerListThree').value()
+	});
+});
+
+app.get("/chocolateJuice", function (request, response) {
+	response.render("chocolateJuice", {
+		ChocolateJuice: db.get('ChocolateJuice').value(),
+		itemList: db.get('itemList').value(),
+		footerListOne: db.get('footerListOne').value(),
+		footerListTwo: db.get('footerListTwo').value(),
+		footerListThree: db.get('footerListThree').value()
 	});
 });

@@ -124,11 +124,7 @@
                     </div>
 
                     <div class="col-md-12 pGridSection">
-                        <% 
-                        for(var i = start; i <= end && i < totalItem; i++) {
-                            var products = productList[i];
-                        //for(var products of productList) { 
-                        %>
+                        <% for(var products of ChocolateJuice) { %>
                         <div class=" col-md-4 col-lg-4 product-wrapper">
                             <div class="product-image--wrapper">
                                 <a href="/product-information/<%= products.id %>">
@@ -154,25 +150,6 @@
                         <% } %>
 
                     </div>
-                    <div class="abc col-12">
-                        <%  if(totalpage > 0) { %>
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <a class="page-link" href="1">Previous</a></li>
-                            <% 
-                           
-                            for(var j = 1; j <= totalpage; j++) { %>
-                            <li class="page-item">
-                                <a class="page-link <%= (j == page ? 'active' : '')%>" href="/product-grid/<%=j%>">
-                                    <%=j%>
-                                </a></li>
-                            <% }%>
-
-                            <li class="page-item"><a class="page-link" href="<%=totalpage %>">Next</a></li>
-                        </ul>
-                        <% } %>
-                    </div>
-
                 </div>
             </div>
         </div>
