@@ -175,6 +175,15 @@
       "name": "Love Mocktail ",
       "quantity": "100",
       "price": "6.99"
+    },
+    {
+      "name": "test",
+      "quantity": "1",
+      "price": "15",
+      "shortDescription": "Orange juice is a liquid extract of the orange tree fruit, produced by squeezing oranges",
+      "detailedDescription": " It comes in several different varieties, including blood orange, navel oranges, valencia orange, clementine, and tangerine. As well as variations in oranges used, some varieties include differing amounts of juice vesicles, known as \"pulp\" in American English, and \"(juicy) bits\" in British English. These vesicles contain the juice of the orange and can be left in or removed during the manufacturing process. How juicy these vesicles are depend upon many factors, such as species, variety, and season. In American English, the beverage name is often abbreviated as \"OJ\".",
+      "id": "pfkdS_YSt",
+      "image": "uploads/b2d4b78fbf64cca211dee36bc5664514"
     }
   ],
   "productListTwo": [
@@ -311,19 +320,19 @@
   ],
   "latestNew": [
     {
-      "image": "http://klbtheme.com/qualis/wp-content/uploads/2018/12/blog-img1-391x207.jpg",
-      "header": "Powerful and flexible premium Ecommerce themes",
-      "paragraph": "Fusce ac pharetra urna. Duis non lacus sit amet lacus interdum facilisis sed non est. Ut mi metus, semper eu"
+      "image": "https://i.ndtvimg.com/i/2016-04/healthy-juice_625x350_51461223140.jpg",
+      "header": "The Alkaline Diet: Does it Really Work for Weight Loss?",
+      "paragraph": "Alkaline Diet, Alkaline Ash Diet, Alkaline Acid Diet and Acid Ash Diet are the various names of diets that come under the umbrella of alkaline diets. The premise these diets are based on is that certain foods can affect the acidity or pH of the body, helping prevent the onset of diseases and even treat them."
     },
     {
-      "image": "http://klbtheme.com/qualis/wp-content/uploads/2018/12/blog-img2-391x207.jpg",
-      "header": "Awesome template with lot’s of features on the board!",
-      "paragraph": "Fusce ac pharetra urna. Duis non lacus sit amet lacus interdum facilisis sed non est. Ut mi metus, semper eu"
+      "image": "https://c.ndtvimg.com/2018-11/amn13v98_vegetable-juice_625x300_24_November_18.jpg",
+      "header": "Weight Loss: Fruits lose out to veggies when it comes to weight loss juices",
+      "paragraph": "Vegetables are low in calories and are hence, may be better for weight loss than fruits. To add juices to your weight loss meals in a healthy way, you may want to include more vegetables and less fruits in them. You can add fruits as alternative to processed sugar, to add taste and sweeten your veggie juices. Weight watchers may want to follow the 90/10 rule for juicing- 90 per cent of your juice should contain vegetables and 10 per cent fruits for sweetness and natural flavour."
     },
     {
-      "image": "http://klbtheme.com/qualis/wp-content/uploads/2019/01/blog-img3-391x207.jpg",
-      "header": "Premium template with unlimited colours, and fully Customizable",
-      "paragraph": "Fusce ac pharetra urna. Duis non lacus sit amet lacus interdum facilisis sed non est. Ut mi metus, semper eu"
+      "image": "https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/juice_wars_slideshow/photolibrary_rf_photo_of_vegetable_juice.jpg",
+      "header": "Juices: The Best and Worst for Your Health",
+      "paragraph": "Drinking your veggies is convenient and good for you. The lycopene in tomato juice may help lower the risk of prostate cancer. Beet juice may help curb blood pressure. Pulpy vegetable juice has some fiber (but not as much as raw vegetables); and fiber cuts hunger. You also get far less sugar and fewer calories than in the typical fruit juice. Check the sodium, though, or choose a low-salt version."
     }
   ],
   "customers": [
