@@ -1,4 +1,3 @@
-
 var shoppingCart = (function () {
 
     cart = [];
@@ -8,6 +7,7 @@ var shoppingCart = (function () {
         this.price = price;
         this.count = count;
     }
+
     function saveCart() {
         localStorage.setItem('shoppingCart', JSON.stringify(cart));
     }
@@ -18,7 +18,7 @@ var shoppingCart = (function () {
     if (localStorage.getItem("shoppingCart") != null) {
         loadCart();
     }
-    
+
 
     var obj = {};
 
@@ -81,7 +81,7 @@ var shoppingCart = (function () {
         for (var item in cart) {
             totalCount += cart[item].count;
         }
-        return totalCount;
+        return Math.abs(totalCount);
     }
 
     // Total cart
@@ -90,7 +90,8 @@ var shoppingCart = (function () {
         for (var item in cart) {
             totalCart += cart[item].price * cart[item].count;
         }
-        return Number(totalCart.toFixed(2));
+        // return Number(totalCart.toFixed(2));
+        return Math.abs(totalCart.toFixed(2));
     }
 
     // List cart
@@ -102,7 +103,7 @@ var shoppingCart = (function () {
             for (p in item) {
                 itemCopy[p] = item[p];
             }
-            itemCopy.total = Number(item.price * item.count).toFixed(2);
+            itemCopy.total = Math.abs(item.price * item.count).toFixed(2);
             cartCopy.push(itemCopy)
         }
         return cartCopy;
@@ -115,21 +116,21 @@ var shoppingCart = (function () {
 function displayCart() {
     var cartArray = shoppingCart.listCart();
     var output = "";
-    output += 
-    "<tr class='col'>" +
-    "<td class = 'checkOut__Table--title' scope='col'>" + "Products" + "</td>"  +
-    "<td class = 'checkOut__Table--title' scope='col'>" + "Price" + "</td>" +  
-    "<td class = 'checkOut__Table--title' scope='col'>" + "Amount" + "</td>" + 
-    "<td class = 'checkOut__Table--title' scope='col'>" + "Clear" + "</td>" + 
-    "<td class = 'checkOut__Table--title' scope='col'>" + "Sub Total" + "</td>" +   
-    "</tr>" ;
+    output +=
+        "<tr class='col'>" +
+        "<td class = 'checkOut__Table--title' scope='col'>" + "Products" + "</td>" +
+        "<td class = 'checkOut__Table--title' scope='col'>" + "Price" + "</td>" +
+        "<td class = 'checkOut__Table--title' scope='col'>" + "Amount" + "</td>" +
+        "<td class = 'checkOut__Table--title' scope='col'>" + "Clear" + "</td>" +
+        "<td class = 'checkOut__Table--title' scope='col'>" + "Sub Total" + "</td>" +
+        "</tr>";
     for (var i in cartArray) {
         output +=
             "<tr>" +
             "<td scope='col'>" + cartArray[i].name + "</td>" +
             "<td scope='col'>" + cartArray[i].price + "$" + "</td>" +
             "<td scope='col'><div class='input-group inputCheckOut'><button class='minus-item input-group-addon plusCheckOutMinus' data-name='" + cartArray[i].name + "'>-</button>" +
-            "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>" +
+            "<input type='text' id='checkMina'  class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>" +
             "<button class='plus-item plusCheckOutPlus input-group-addon' data-name='" + cartArray[i].name + "'>+</button></div></td>" +
             "<td scope='col'><button class='delete-item btn btn-danger' data-name='" + cartArray[i].name + "'>X</button></td>" +
             " = " +
@@ -137,9 +138,33 @@ function displayCart() {
             "</tr>";
     }
     $('.show-cart').html(output);
+    // var checkMin = document.getElementById('checkMina')
+    // console.log('asdasd', checkMin)
+    // if (checkMin < 0) {
+    //     return Math.abs(checkMin);
+    //     // console.log('bad news here');
+    // } else {
+    //     // console.log('good news here');
+    // };
+    var txtBox = $('#checkMina');
+    var blackList = ['-'];
+
+    function checkBlackList(str) {
+        $.each(blackList, function (i, n) {
+            if (new RegExp(n, "i").test(str)) {
+                txtBox.val(txtBox.val().replace(new RegExp(n, "gi"), ""))
+            }
+        })
+    }
+
+    txtBox.on('keyup', function (e) {
+        checkBlackList(this.value);
+    })
+    
     $('.total-cart').html(shoppingCart.totalCart());
     $('.total-count').html(shoppingCart.totalCount());
 }
+
 
 // Add ro Cart
 
@@ -187,4 +212,12 @@ $('.show-cart').on("change", ".item-count", function (event) {
     displayCart();
 });
 
+
+
+// $('.item-count').on("change", function () {
+//     var minimum = 1;
+//     if (price < minimum) {
+//         price = minimum;
+//     }
+// })
 displayCart();
